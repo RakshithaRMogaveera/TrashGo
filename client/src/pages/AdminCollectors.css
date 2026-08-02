@@ -1,0 +1,996 @@
+/* ==========================================
+            ADMIN COLLECTORS PAGE
+========================================== */
+
+.admin-collectors{
+
+    min-height:100vh;
+
+    background:#f4f7f9;
+
+    padding:40px;
+}
+
+/* ==========================================
+              BACK BUTTON
+========================================== */
+
+.back-btn-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    width:fit-content;
+
+    margin-bottom:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.back-btn-wrapper:hover{
+
+    transform:translateX(-4px);
+}
+
+.back-btn{
+
+    width:42px !important;
+
+    height:42px !important;
+
+    background:#fff !important;
+
+    color:#2f5815 !important;
+
+    border:1px solid #dce9dc !important;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08) !important;
+
+    pointer-events:none;
+}
+
+.back-btn-wrapper:hover .back-btn{
+
+    background:#2f5815 !important;
+
+    color:#fff !important;
+}
+
+.back-text{
+
+    font-size:1rem !important;
+
+    font-weight:600 !important;
+
+    color:#2f5815;
+}
+
+/* ==========================================
+                 HEADER
+========================================== */
+
+.collector-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #ffffff,
+        #eef8ef
+    );
+
+    border-radius:24px;
+
+    padding:30px 35px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    margin-bottom:35px;
+}
+
+.logo-area{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+}
+
+.logo-text{
+
+    color:#2f5815;
+
+    font-size:1.8rem !important;
+
+    font-weight:800 !important;
+
+    letter-spacing:.5px !important;
+
+    font-family:Papyrus,fantasy !important;
+}
+
+.logo-icon{
+
+    color:#43a047;
+
+    font-size:2.2rem !important;
+
+    animation:rotateRecycle 10s linear infinite;
+}
+
+@keyframes rotateRecycle{
+
+    from{
+        transform:rotate(0deg);
+    }
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.collector-title{
+
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    color:#204d1d;
+
+    margin-bottom:8px !important;
+}
+
+.collector-subtitle{
+
+    color:#6b7280;
+
+    font-size:1rem !important;
+}
+
+/* ==========================================
+                STATS
+========================================== */
+
+.collector-stats-grid{
+
+    display:flex !important;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:24px;
+
+    margin:40px auto !important;
+}
+
+.collector-stats-grid .MuiGrid-item{
+
+    flex:0 0 auto;
+
+    padding-top:0 !important;
+}
+
+.collector-stat-card{
+
+    width:210px;
+
+    height:210px;
+
+    border-radius:24px !important;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    border:none !important;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08) !important;
+}
+
+.collector-stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.14) !important;
+}
+
+.collector-stat-card .MuiCardContent-root{
+
+    width:100%;
+
+    height:100%;
+
+    padding:28px !important;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.collector-stat-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:22px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    margin-bottom:18px;
+}
+
+.collector-stat-icon svg{
+
+    font-size:2rem !important;
+}
+
+.collector-stat-number{
+
+    font-size:2.5rem !important;
+
+    font-weight:800 !important;
+
+    color:#1f2937;
+
+    line-height:1;
+}
+
+.collector-stat-label{
+
+    margin-top:12px !important;
+
+    font-size:1rem !important;
+
+    font-weight:600 !important;
+
+    color:#64748b;
+}
+
+/* ==========================================
+            CARD COLORS
+========================================== */
+
+.total-card{
+
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #f4f9ff
+    );
+}
+
+.approved-card{
+
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #f2fff5
+    );
+}
+
+.pending-card{
+
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #fff8eb
+    );
+}
+
+.vehicle-card{
+
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #f4faff
+    );
+}
+
+/* ==========================================
+            ICON COLORS
+========================================== */
+
+.total-icon{
+
+    background:linear-gradient(
+        135deg,
+        #42a5f5,
+        #1976d2
+    );
+}
+
+.approved-icon{
+
+    background:linear-gradient(
+        135deg,
+        #66bb6a,
+        #2e7d32
+    );
+}
+
+.pending-icon{
+
+    background:linear-gradient(
+        135deg,
+        #ffa726,
+        #ef6c00
+    );
+}
+
+.vehicle-icon{
+
+    background:linear-gradient(
+        135deg,
+        #26c6da,
+        #00838f
+    );
+}
+/* ==========================================
+            SEARCH & FILTER
+========================================== */
+
+.collector-toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-bottom:35px;
+}
+
+.collector-search{
+
+    flex:1;
+}
+
+.collector-search .MuiOutlinedInput-root{
+
+    height:56px;
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.collector-search .MuiOutlinedInput-root:hover{
+
+    box-shadow:0 10px 25px rgba(46,125,50,.10);
+}
+
+.collector-search .MuiOutlinedInput-root.Mui-focused{
+
+    box-shadow:0 12px 30px rgba(46,125,50,.18);
+}
+
+.collector-search input{
+
+    font-size:.98rem;
+}
+
+.collector-filter{
+
+    width:230px;
+}
+
+.collector-filter .MuiOutlinedInput-root{
+
+    height:56px;
+
+    border-radius:16px;
+
+    background:#ffffff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+    transition:.3s;
+}
+
+.collector-filter .MuiOutlinedInput-root:hover{
+
+    box-shadow:0 10px 25px rgba(46,125,50,.10);
+}
+
+.collector-filter .MuiOutlinedInput-root.Mui-focused{
+
+    box-shadow:0 12px 30px rgba(46,125,50,.18);
+}
+
+.collector-search .MuiOutlinedInput-notchedOutline,
+.collector-filter .MuiOutlinedInput-notchedOutline{
+
+    border-color:#dce9dc;
+}
+
+.collector-search .MuiOutlinedInput-root:hover
+.MuiOutlinedInput-notchedOutline,
+.collector-filter .MuiOutlinedInput-root:hover
+.MuiOutlinedInput-notchedOutline{
+
+    border-color:#66bb6a;
+}
+
+.collector-search .MuiOutlinedInput-root.Mui-focused
+.MuiOutlinedInput-notchedOutline,
+.collector-filter .MuiOutlinedInput-root.Mui-focused
+.MuiOutlinedInput-notchedOutline{
+
+    border-color:#2e7d32;
+
+    border-width:2px;
+}
+
+/* ==========================================
+            COLLECTOR GRID
+========================================== */
+
+.admin-collectors .MuiGrid-container{
+
+    margin-top:10px;
+}
+/* ==========================================
+            COLLECTOR CARDS
+========================================== */
+.collector-info-grid{
+
+    display:grid;
+
+    grid-template-columns:110px 1fr;
+
+    row-gap:18px;
+
+    column-gap:14px;
+
+    margin:22px 0;
+}
+
+.info-title{
+
+    font-weight:700 !important;
+
+    color:#64748b;
+
+    display:flex;
+
+    align-items:center;
+}
+
+.info-value{
+
+    font-weight:600 !important;
+
+    color:#1f2937;
+
+    display:flex;
+
+    align-items:center;
+}
+
+.collector-card-footer{
+
+    margin-top:auto;
+
+    padding-top:22px;
+}
+
+.collector-card-footer button{
+
+    height:46px;
+
+    border-radius:14px;
+
+    text-transform:none;
+
+    font-size:.95rem;
+
+    font-weight:700;
+}
+.collector-main-card{
+
+    width:100%;
+
+    min-height:280px;
+
+    border-radius:22px !important;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.collector-main-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.14) !important;
+}
+
+.collector-main-card .MuiCardContent-root{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    flex:1;
+
+    padding:24px !important;
+}
+
+/* ==========================================
+            TOP PROFILE
+========================================== */
+
+.collector-card-top{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:24px;
+}
+
+.collector-avatar-large{
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #43a047,
+        #2e7d32
+    );
+
+    box-shadow:0 10px 22px rgba(67,160,71,.35);
+}
+
+.collector-avatar-large svg{
+
+    font-size:2rem !important;
+}
+
+.collector-card-name{
+
+    font-size:1.2rem !important;
+
+    font-weight:700 !important;
+
+    color:#1f2937;
+}
+
+.collector-card-phone{
+
+    margin-top:8px !important;
+
+    display:flex;
+
+    align-items:center;
+
+    color:#64748b;
+
+    font-size:.95rem !important;
+}
+
+/* ==========================================
+            DETAILS
+========================================== */
+
+.collector-card-details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    padding:18px 0;
+
+    border-top:1px solid #edf2f7;
+
+    border-bottom:1px solid #edf2f7;
+}
+
+.collector-card-details p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#475569;
+
+    font-weight:500;
+
+    line-height:1.5;
+}
+
+.collector-info-icon{
+
+    color:#2e7d32;
+
+    font-size:20px !important;
+
+    flex-shrink:0;
+}
+
+/* ==========================================
+            FOOTER
+========================================== */
+
+.collector-card-footer{
+
+    margin-top:auto;
+
+    padding-top:22px;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+}
+
+.collector-card-footer .MuiButton-root{
+
+    border-radius:14px;
+
+    text-transform:none;
+
+  width:100%;
+
+    height:46px;
+
+    border-radius:14px;
+
+    text-transform:none;
+
+    font-weight:700;
+    padding:10px 22px;
+
+    box-shadow:none;
+}
+
+.collector-card-footer .MuiButton-root:hover{
+
+    box-shadow:0 10px 22px rgba(46,125,50,.25);
+}
+
+
+/* ==========================================
+            APPROVED CHIP
+========================================== */
+
+.collector-card-footer .MuiChip-root{
+
+    font-weight:700;
+
+    border-radius:10px;
+
+    padding:2px 6px;
+}
+/* ==========================================
+            TABLET
+========================================== */
+
+@media (max-width:1024px){
+
+.admin-collectors{
+
+    padding:24px;
+}
+
+.collector-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding:24px;
+}
+
+.collector-stats-grid{
+
+    gap:18px;
+}
+
+.collector-stat-card{
+
+    width:180px;
+
+    height:180px;
+}
+
+.collector-stat-number{
+
+    font-size:2.2rem !important;
+}
+
+}
+
+/* ==========================================
+            MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.admin-collectors{
+
+    padding:16px;
+}
+
+/* Header */
+
+.collector-header{
+
+    padding:20px;
+
+    border-radius:18px;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:18px;
+}
+
+.logo-area{
+
+    justify-content:center;
+}
+
+.collector-title{
+
+    font-size:1.6rem !important;
+}
+
+.collector-subtitle{
+
+    font-size:.9rem !important;
+}
+
+/* Back */
+
+.back-btn-wrapper{
+
+    margin-bottom:16px;
+}
+
+/* Stats */
+
+.collector-stats-grid{
+
+    display:grid !important;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+    margin:24px 0 !important;
+}
+
+.collector-stats-grid .MuiGrid-item{
+
+    width:100% !important;
+}
+
+.collector-stat-card{
+
+    width:100%;
+
+    height:165px;
+}
+
+.collector-stat-card .MuiCardContent-root{
+
+    padding:18px !important;
+}
+
+.collector-stat-icon{
+
+    width:56px;
+
+    height:56px;
+}
+
+.collector-stat-icon svg{
+
+    font-size:1.8rem !important;
+}
+
+.collector-stat-number{
+
+    font-size:2rem !important;
+}
+
+.collector-stat-label{
+
+    font-size:.9rem !important;
+}
+
+/* Toolbar */
+
+.collector-toolbar{
+
+    flex-direction:column;
+
+    gap:14px;
+}
+
+.collector-search,
+.collector-filter{
+
+    width:100%;
+}
+
+/* Cards */
+
+.collector-card-top{
+
+    gap:14px;
+}
+
+.collector-avatar-large{
+
+    width:60px;
+
+    height:60px;
+}
+
+.collector-avatar-large svg{
+
+    font-size:1.7rem !important;
+}
+
+.collector-card-name{
+
+    font-size:1.05rem !important;
+}
+
+.collector-card-phone{
+
+    font-size:.85rem !important;
+}
+
+.collector-card-details{
+
+    gap:12px;
+
+    padding:16px 0;
+}
+
+.collector-card-details p{
+
+    font-size:.9rem;
+}
+
+.collector-card-footer{
+
+    padding-top:18px;
+}
+
+.collector-card-footer .MuiButton-root{
+
+    width:100%;
+}
+
+}
+
+/* ==========================================
+            SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.collector-stats-grid{
+
+    grid-template-columns:1fr;
+}
+
+.collector-stat-card{
+
+    height:150px;
+}
+
+.logo-text{
+
+    font-size:1.5rem !important;
+}
+
+.collector-title{
+
+    font-size:1.4rem !important;
+}
+
+.collector-subtitle{
+
+    font-size:.85rem !important;
+}
+
+.collector-main-card .MuiCardContent-root{
+
+    padding:18px !important;
+}
+
+.collector-avatar-large{
+
+    width:56px;
+
+    height:56px;
+}
+
+.collector-avatar-large svg{
+
+    font-size:1.5rem !important;
+}
+
+.collector-card-footer .MuiButton-root{
+
+    font-size:.9rem;
+}
+
+.back-text{
+
+    font-size:.9rem !important;
+}
+
+}

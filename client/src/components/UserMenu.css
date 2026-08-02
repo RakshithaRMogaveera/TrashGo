@@ -1,0 +1,226 @@
+/* ==========================================
+DESKTOP NAVBAR
+========================================== */
+
+.desktop-navbar{
+    position:fixed;
+    top:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:92%;
+    max-width:1450px;
+    height:72px;
+    z-index:2000;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 28px;
+
+    background:rgba(16,40,27,.55);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:22px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
+
+.desktop-logo{
+    color:#ffffff;
+    font-weight:800 !important;
+    cursor:pointer;
+    user-select:none;
+}
+
+.desktop-menu{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.desktop-menu-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    padding:10px 18px;
+
+    border-radius:14px;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:500;
+}
+
+.desktop-menu-item:hover{
+    background:rgba(255,255,255,.12);
+}
+
+.desktop-menu-item.active{
+    background:#22c55e;
+    color:#fff;
+}
+
+.desktop-menu-item.logout{
+    background:rgba(239,68,68,.15);
+}
+
+.desktop-menu-item.logout:hover{
+    background:#ef4444;
+}
+
+/* ==========================================
+MOBILE MENU BUTTON
+========================================== */
+
+.user-menu-button{
+    display:none !important;
+
+    position:fixed !important;
+    top:20px;
+    left:20px;
+
+    z-index:2200;
+
+    width:52px;
+    height:52px;
+
+    color:#000000 !important;
+
+    background:rgba(254, 254, 254, 0.255) !important;
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.user-menu-button:hover{
+    background:rgba(255,255,255,.25) !important;
+}
+
+/* ==========================================
+DRAWER
+========================================== */
+
+.user-menu-drawer{
+    width:300px;
+  position:relative;
+
+    overflow:hidden;
+    border-top-right-radius:28px;
+    border-bottom-right-radius:28px;
+
+     background:rgba(159, 164, 159, 0.55) !important;
+
+    backdrop-filter:blur(32px);
+    -webkit-backdrop-filter:blur(32px);
+
+    border-right:1px solid rgba(255,255,255,.18);
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,.28),
+        inset 1px 0 rgba(255,255,255,.08);
+
+   
+}
+.user-menu-drawer::before{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.18),
+            rgba(255,255,255,.05)
+        );
+
+    pointer-events:none;
+}
+.user-menu-content{
+    position:relative;
+    z-index:2;
+    padding:28px;
+}
+.user-menu-logo{
+    margin-bottom:28px !important;
+padding:20px 10px;
+    color:#f9f9f9;
+ font-family: Papyrus, fantasy !important;
+    font-weight:700 !important;
+}
+
+/* ==========================================
+MENU ITEMS
+========================================== */
+
+.user-menu-item{
+
+    margin:10px 0 !important;
+
+    border-radius:16px !important;
+
+    color:#000000 !important;
+
+    transition:.3s;
+}
+
+.user-menu-item:hover{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.user-menu-item .MuiListItemIcon-root{
+    color:#222;
+}
+
+.user-menu-item.Mui-selected{
+    background:rgba(186, 239, 206, 0.336) !important;
+}
+
+.user-menu-item.Mui-selected .MuiListItemIcon-root{
+    color:#f9f9f9;
+}
+
+.user-menu-item.Mui-selected .MuiListItemText-primary{
+    color:#f9f9f9;
+    font-weight:700;
+}
+
+/* ==========================================
+LOGOUT
+========================================== */
+
+.user-menu-logout{
+    margin-top:10px !important;
+
+    border-radius:14px !important;
+}
+
+.user-menu-logout .MuiListItemIcon-root{
+    color:#ef4444;
+}
+
+/* ==========================================
+RESPONSIVE
+========================================== */
+
+@media (max-width:900px){
+
+    .desktop-navbar{
+        display:none;
+    }
+
+    .user-menu-button{
+        display:flex !important;
+    }
+
+}

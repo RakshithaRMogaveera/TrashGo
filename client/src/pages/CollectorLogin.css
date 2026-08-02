@@ -1,0 +1,361 @@
+/*==========================================
+LOGIN PAGE
+==========================================*/
+.collector-login-page{
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-image:url("/images/loginC.png");
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        position:relative;
+}
+.collector-login-page::before{
+        content:"";
+        position:absolute;
+        inset:0;
+        background:linear-gradient(
+        rgba(255,255,255,.18),
+        rgba(255,255,255,.18)
+    );
+}
+/*==========================================
+CARD
+==========================================*/
+.collector-login-card{
+        width:440px;
+        padding:40px !important;
+        position:relative;
+        z-index:1;
+        border-radius:28px !important;
+        background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.72) 0%,
+        rgba(246,250,246,.68) 100%
+    ) !important;
+        backdrop-filter:blur(22px);
+        -webkit-backdrop-filter:blur(22px);
+        border:1px solid rgba(255,255,255,.45);
+        box-shadow:0 20px 45px rgba(30,60,35,.20) !important;
+        overflow:hidden;
+}
+/*==========================================
+DECORATIVE CIRCLES
+==========================================*/
+.collector-login-circle-top{
+        position:absolute;
+        top:-70px;
+        left:-70px;
+        width:180px;
+        height:180px;
+        border-radius:50%;
+        background:radial-gradient(
+        circle,
+        #dcfce7 0%,
+        transparent 72%
+    );
+        opacity:.8;
+        z-index:0;
+}
+.collector-login-circle-bottom{
+        position:absolute;
+        bottom:-90px;
+        right:-90px;
+        width:220px;
+        height:220px;
+        border-radius:50%;
+        background:radial-gradient(
+        circle,
+        #bbf7d0 0%,
+        transparent 72%
+    );
+        opacity:.8;
+        z-index:0;
+}
+/*==========================================
+RIGHT DECORATIVE PANELS
+==========================================*/
+.collector-login-panel-bg{
+        position:absolute;
+        top:0;
+        right:-70px;
+        width:170px;
+        height:100%;
+        background:#eef7f1;
+        border-top-left-radius:120px;
+        border-bottom-left-radius:120px;
+        box-shadow:-18px 0 30px rgba(0,0,0,.08);
+        z-index:1;
+}
+.collector-login-panel-inner{
+        position:absolute;
+        top:30px;
+        right:-30px;
+        width:110px;
+        height:calc(100% - 60px);
+        background:#ffffff;
+        border-top-left-radius:90px;
+        border-bottom-left-radius:90px;
+        box-shadow:-10px 0 20px rgba(0,0,0,.05);
+        z-index:1;
+}
+/*==========================================
+LOGO
+==========================================*/
+
+.collector-login-logo{
+    position:relative;
+    z-index:2;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:18px;
+}
+.login-logo-icon{
+    font-size:2rem !important;
+    line-height:2;
+    animation:rotateRecycle 10s linear infinite;
+}
+
+.login-logo-text{
+    color:#2f5815;
+    font-size:2rem !important;
+    font-weight:800 !important;
+    letter-spacing:.5px !important;
+    line-height:1;
+    font-family:Papyrus,fantasy !important;
+}
+/*==========================================
+TITLE
+==========================================*/
+.collector-login-title{
+        font-size:1.2rem !important;
+        font-weight:500 !important;
+        color:#1f2937;
+        text-align:center;
+        margin-bottom:8px !important;
+        position:relative;
+        z-index:2;
+}
+/*==========================================
+SUBTITLE
+==========================================*/
+.collector-login-subtitle{
+        text-align:center;
+        color:#6b7280;
+        font-size:.92rem !important;
+        margin-bottom:32px !important;
+        position:relative;
+        z-index:2;
+}
+/*==========================================
+FORM
+==========================================*/
+.collector-login-form{
+        display:flex;
+        flex-direction:column;
+        gap:24px;
+        position:relative;
+        z-index:2;
+}
+.collector-login-form .MuiOutlinedInput-root{
+        border-radius:16px;
+        background:rgba(255,255,255,.82);
+        backdrop-filter:blur(8px);
+        -webkit-backdrop-filter:blur(8px);
+        height:58px;
+}
+.collector-login-form .MuiOutlinedInput-root fieldset{
+        border-color:#d7e5da;
+}
+.collector-login-form .MuiOutlinedInput-root:hover fieldset{
+        border-color:#7bc596;
+}
+.collector-login-form .MuiOutlinedInput-root.Mui-focused fieldset{
+        border-color:#22c55e;
+        border-width:2px;
+}
+/*==========================================
+PASSWORD TOGGLE
+==========================================*/
+.collector-login-password-toggle{
+        color:#64748b !important;
+}
+/*==========================================
+LOGIN BUTTON
+==========================================*/
+.collector-login-btn{
+        position:relative;
+        z-index:2;
+        margin-top:8px !important;
+        height:56px;
+        border-radius:16px !important;
+        font-size:16px !important;
+        font-weight:700 !important;
+        text-transform:none !important;
+        background:linear-gradient(
+        90deg,
+        #456756,
+        #5d7f69
+    ) !important;
+        box-shadow:0 10px 25px rgba(69,103,86,.28) !important;
+}
+.collector-login-btn:hover{
+        background:linear-gradient(
+        90deg,
+        #3f5f4d,
+        #54725f
+    ) !important;
+        box-shadow:0 14px 30px rgba(69,103,86,.35) !important;
+}
+/*==========================================
+FOOTER
+==========================================*/
+.collector-login-footer{
+        margin-top:16px;
+        text-align:center;
+        position:relative;
+        z-index:2;
+}
+.collector-login-footer-text{
+        font-size:14px;
+        color:#6b7280;
+}
+.collector-login-link{
+        color:#456756;
+        font-weight:700;
+        cursor:pointer;
+}
+.collector-login-link:hover{
+        text-decoration:underline;
+}
+/*==========================================
+SNACKBAR
+==========================================*/
+.collector-login-alert{
+        width:100%;
+        min-width:320px;
+        font-size:16px;
+        border-radius:12px !important;
+        box-shadow:0 8px 20px rgba(0,0,0,.25) !important;
+}
+/*==========================================
+RESPONSIVE
+==========================================*/
+@media (min-width:600px){
+        .login-logo-text{
+            font-size:2.2rem;
+    }
+}
+@media (min-width:900px){
+        .login-logo-text{
+            font-size:2.8rem;
+    }
+}
+/*==========================================
+---------------Mobile-------------
+==========================================*/
+
+@media (max-width:576px){
+
+    .collector-login-page{
+        padding:16px;
+    }
+
+    .collector-login-card{
+        width:100%;
+        max-width:360px;
+        padding:26px 22px !important;
+        border-radius:24px !important;
+    }
+
+    .collector-login-panel-bg{
+        display:none;
+    }
+
+    .collector-login-panel-inner{
+        display:none;
+    }
+
+    .collector-login-circle-top{
+        width:120px;
+        height:120px;
+        top:-45px;
+        left:-45px;
+    }
+
+    .collector-login-circle-bottom{
+        width:140px;
+        height:140px;
+        right:-50px;
+        bottom:-50px;
+    }
+
+    .collector-login-logo{
+        gap:8px;
+        margin-bottom:14px;
+    }
+
+    .login-logo-icon{
+        font-size:1.6rem !important;
+    }
+
+    .login-logo-text{
+        font-size:1.65rem !important;
+    }
+
+    .collector-login-title{
+        font-size:1.05rem !important;
+    }
+
+    .collector-login-subtitle{
+        font-size:.85rem !important;
+        margin-bottom:22px !important;
+    }
+
+    .collector-login-form{
+        gap:18px;
+    }
+
+    .collector-login-form .MuiOutlinedInput-root{
+        height:50px;
+    }
+
+    .collector-login-btn{
+        height:48px;
+        font-size:14px !important;
+    }
+
+    .collector-login-footer-text{
+        font-size:13px;
+    }
+
+    .collector-login-alert{
+        min-width:unset;
+        width:90vw;
+        font-size:14px;
+    }
+.collector-login-footer{
+        margin-top:10px;
+        text-align:center;
+        position:relative;
+        z-index:2;
+}
+.collector-login-footer-text{
+        font-size:13px !important;
+        color:#6b7280;
+}
+.collector-login-link{
+        color:#456756;
+        font-weight:700;
+        cursor:pointer;
+}
+.collector-login-link:hover{
+        text-decoration:underline;
+}
+}

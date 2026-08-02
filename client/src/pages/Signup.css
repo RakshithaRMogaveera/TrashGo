@@ -1,0 +1,215 @@
+/*==========================================
+SIGNUP PAGE
+==========================================*/
+.signup-page{
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position:relative;
+        overflow:hidden;
+        background-image:url("/images/login.jpg");
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+}
+.signup-page::before{
+        content:"";
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,.18);
+        backdrop-filter:blur(1px);
+}
+/*==========================================
+CONTAINER
+==========================================*/
+.signup-container{
+        width:100%;
+        max-width:400px !important;
+        position:relative;
+        z-index:2;
+}
+/*==========================================
+CARD
+==========================================*/
+.signup-card{
+        width:100%;
+        max-width:390px;
+        padding:24px 28px !important;
+        background:rgba(255,255,255,.12) !important;
+        backdrop-filter:blur(18px);
+        -webkit-backdrop-filter:blur(18px);
+        border:1.5px solid rgba(255,255,255,.35);
+        border-radius:24px !important;
+        box-shadow:0 20px 60px rgba(0,0,0,.35) !important;
+        color:#fff;
+        transition:all .35s ease;
+}
+.signup-card:hover{
+        transform:translateY(-4px);
+}
+/*==========================================
+LOGO
+==========================================*/
+.signup-logo-wrapper{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:5px;
+        margin-bottom:10px;
+}
+
+/*==========================================
+LOGO TEXT
+==========================================*/
+.signup-logo-icon{
+       font-size:2rem !important;
+        line-height:2;
+            animation:rotateRecycle 10s linear infinite;
+
+}
+.signup-logo-text{
+        color:#2f5815;
+        font-size:1.8rem !important;
+        font-weight:800 !important;
+        letter-spacing:0.5px !important;
+        line-height:1;
+        font-family:  Papyrus, fantasy !important;
+}
+/*==========================================
+SUBTITLE
+==========================================*/
+.signup-subtitle{
+        color:rgba(255,255,255,.85);
+        font-size:.95rem !important;
+        margin-bottom:16px !important;
+}
+/*==========================================
+FORM
+==========================================*/
+.signup-form{
+        display:flex;
+        flex-direction:column;
+        gap:18.4px;
+}
+.signup-form .MuiOutlinedInput-root{
+        height:56px;
+        color:#fff;
+        border-radius:12px;
+        background:rgba(255,255,255,.05);
+}
+.signup-form .MuiOutlinedInput-root fieldset{
+        border-color:rgba(255,255,255,.45);
+}
+.signup-form .MuiOutlinedInput-root:hover fieldset{
+        border-color:#ffffff;
+}
+.signup-form .MuiOutlinedInput-root.Mui-focused fieldset{
+        border-color:#ffffff;
+        border-width:1.5px;
+}
+.signup-form .MuiInputLabel-root{
+        color:rgba(255,255,255,.7);
+}
+.signup-form .MuiInputLabel-root.Mui-focused{
+        color:#ffffff;
+}
+.signup-form .MuiInputBase-input::placeholder{
+        color:rgba(255,255,255,.75);
+        opacity:1;
+}
+.signup-form .MuiSvgIcon-root{
+        color:rgba(255,255,255,.75);
+}
+
+/*==========================================
+PASSWORD TOGGLE
+==========================================*/
+.signup-password-toggle{
+        color:rgba(255,255,255,.75) !important;
+}
+/*==========================================
+SIGNUP BUTTON
+==========================================*/
+.signup-btn{
+        margin-top:8px !important;
+        padding:10.4px 0 !important;
+        border-radius:12px !important;
+        text-transform:none !important;
+        font-weight:700 !important;
+        font-size:1.05rem !important;
+        color:#fff !important;
+        background:linear-gradient(
+        90deg,
+        #c7c91d 0%,
+        #1fb45c 100%
+    ) !important;
+        box-shadow:0 8px 24px rgba(31,180,92,.35) !important;
+        transition:all .3s ease !important;
+}
+.signup-btn:hover{
+        background:linear-gradient(
+        90deg,
+        #b5b800 0%,
+        #19964d 100%
+    ) !important;
+        transform:translateY(-2px);
+        box-shadow:0 12px 28px rgba(31,180,92,.45) !important;
+}
+/*==========================================
+LOGIN LINK
+==========================================*/
+.signup-login-wrapper{
+        text-align:center;
+        margin-top:26px;
+}
+.signup-login-text{
+        margin-top:20px !important;
+        text-align:center;
+        color:rgba(255,255,255,.9);
+       font-size:.82rem !important;
+}
+.signup-login-link{
+        color:#ffffff;
+        cursor:pointer;
+        font-weight:700;
+         font-size:.92rem !important;
+
+}
+.signup-login-link:hover{
+        text-decoration:underline;
+        
+}
+/*==========================================
+FOOTER
+==========================================*/
+.signup-footer-text{
+        margin-top:20px !important;
+        font-size:.68rem !important;
+        color:rgba(255,255,255,.8);
+        font-weight:400 !important;
+}
+/*==========================================
+SNACKBAR
+==========================================*/
+.signup-alert{
+        width:100%;
+        min-width:320px;
+         font-size:16px;
+        border-radius:12px !important;
+        box-shadow:0 8px 20px rgba(0,0,0,.25) !important;
+}
+/*==========================================
+RESPONSIVE
+==========================================*/
+@media (min-width:600px){
+        .signup-logo-text{
+            font-size:2.2rem;
+    }
+}
+@media (min-width:900px){
+        .signup-logo-text{
+            font-size:2.8rem;
+    }
+}
+

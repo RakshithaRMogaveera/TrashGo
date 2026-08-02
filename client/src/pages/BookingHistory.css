@@ -1,0 +1,543 @@
+/*==========================================
+CANCEL PAGE
+==========================================*/
+.booking-history-cancel-page{
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-image:url("/images/bg6.jpg");
+        background-size:cover;
+        background-position:center;
+        position:relative;
+}
+.booking-history-cancel-page::before{
+        content:"";
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,.45);
+}
+.booking-history-cancel-card{
+        padding:40px !important;
+        width:450px;
+        text-align:center;
+        position:relative;
+        z-index:1;
+        border-radius:24px !important;
+        background:rgba(255,255,255,.95) !important;
+        backdrop-filter:blur(12px);
+        box-shadow:0 20px 40px rgba(0,0,0,.2) !important;
+}
+.booking-history-cancel-title{
+        font-size:2.125rem !important;
+        font-weight:700 !important;
+        color:#dc2626;
+}
+.booking-history-cancel-text{
+        margin-top:16px !important;
+        color:#64748b;
+}
+.booking-history-cancel-btn{
+        margin-top:16px !important;
+        border-radius:12px !important;
+        text-transform:none !important;
+        background:#dc2626 !important;
+}
+/*==========================================
+PAGE
+==========================================*/
+.booking-history-page{
+        min-height:100vh;
+       padding:100px 25px 40px;
+        background-image:url("/images/bg6.png");
+        background-size:cover;
+        background-position:center;
+        background-attachment:fixed;
+        position:relative;
+}
+.booking-history-page::before{
+        content:"";
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,.35);
+        z-index:0;
+}
+.booking-history-content{
+        position:relative;
+        z-index:1;
+}
+.booking-history-header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:24px;
+        flex-wrap:wrap;
+        gap:16px;
+        padding-left:10px;
+}
+.booking-history-title{
+        font-size:2.5rem !important;
+        line-height:1.1;
+        font-weight:700 !important;
+        color:#fff;
+}
+.booking-history-subtitle{
+        color:rgba(255,255,255,.82);
+        margin-top:4px !important;
+}
+/*==========================================
+HEADER ACTIONS
+==========================================*/
+.booking-history-actions{
+        display:flex;
+        align-items:center;
+        gap:16px;
+}
+.booking-history-filter{
+        width:190px;
+}
+.booking-history-select{
+        width:100%;
+        background:rgba(255,255,255,.95);
+        border-radius:12px;
+}
+.booking-history-notification-btn{
+        background:rgba(255,255,255,.9) !important;
+}
+.booking-history-avatar{
+        width:48px !important;
+        height:48px !important;
+        cursor:pointer;
+}
+/*==========================================
+MENUS
+==========================================*/
+.booking-history-notification-menu{
+        width:320px;
+        border-radius:12px !important;
+        margin-top:8px;
+}
+.booking-history-profile-menu{
+        min-width:180px;
+        border-radius:12px !important;
+        margin-top:8px;
+}
+/*==========================================
+EMPTY STATE
+==========================================*/
+.booking-history-empty-card{
+        padding:40px !important;
+        text-align:center;
+        border-radius:20px !important;
+        background:rgba(255,255,255,.92) !important;
+        backdrop-filter:blur(12px);
+}
+/*==========================================
+BOOKING CARD
+==========================================*/
+.booking-history-card{
+        margin-bottom:24px !important;
+        max-width:1580px;
+        margin-left:auto;
+        margin-right:auto;
+        padding:15px 25px !important;
+        border-radius:20px !important;
+        background:rgba(255,255,255,.94) !important;
+        backdrop-filter:blur(16px);
+        border:1px solid rgba(255,255,255,.45);
+        box-shadow:0 15px 35px rgba(0,0,0,.08) !important;
+}
+/*==========================================
+CARD HEADER
+==========================================*/
+.booking-history-card-header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:9px;
+        flex-wrap:wrap;
+        gap:12px;
+        border-bottom:1px solid #e5e7eb;
+        padding-bottom:8px;
+}
+.booking-history-card-left{
+        display:flex;
+        align-items:center;
+        gap:16px;
+        flex-wrap:wrap;
+}
+.booking-history-id-chip{
+        background:#e8f7ec !important;
+        color:#16a34a !important;
+        font-weight:700 !important;
+}
+.booking-history-status-chip{
+        height:48px !important;
+        padding:0 20px !important;
+        border-radius:999px !important;
+}
+.booking-history-status-chip .MuiChip-label{
+        padding:0 23px !important;
+        font-size:1rem;
+        font-weight:700;
+}
+/*==========================================
+INFO GRID
+==========================================*/
+.booking-history-info-grid{
+        display:grid;
+        grid-template-columns:repeat(3,minmax(240px,1fr));
+        gap:50px;
+        margin-bottom:16px;
+        padding:12px 15px;
+        border:1px solid #ececec;
+        border-radius:12px;
+}
+.booking-history-info-column{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+}
+/*==========================================
+COLLECTOR SECTION
+==========================================*/
+.booking-history-collector{
+        margin-top:8px;
+        margin-bottom:16px;
+        padding:10px 12px;
+        border-radius:12px;
+        background:#f9fbfc;
+        border:1px solid #e8edf3;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:16px;
+}
+.booking-history-collector-left{
+        display:flex;
+        align-items:center;
+        gap:16px;
+}
+.booking-history-collector-avatar{
+        width:48px !important;
+        height:48px !important;
+        background:#16a34a !important;
+        font-weight:bold !important;
+        font-size:20px !important;
+}
+.booking-history-collector-name{
+        font-weight:700 !important;
+        font-size:1.05rem !important;
+}
+.booking-history-collector-role{
+        color:#64748b;
+        margin-top:4px !important;
+}
+.booking-history-collector-right{
+    display:flex;
+    gap:36px;
+    align-items:flex-start;
+    margin-right:12px;
+}
+
+.booking-history-collector-item{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    min-width:110px;
+}
+
+.booking-history-collector-label{
+    font-size:13px !important;
+    color:#94a3b8;
+    margin-bottom:4px;
+}
+
+.booking-history-collector-value{
+    font-weight:600 !important;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:#1f2937;
+}
+/*==========================================
+STEPPER
+==========================================*/
+.booking-history-stepper{
+        margin-top:8px;
+        margin-bottom:16px;
+}
+.booking-history-stepper-content .MuiStepLabel-label{
+        font-size:.82rem;
+}
+.booking-history-stepper-content .MuiStepIcon-root{
+        font-size:1.5rem;
+}
+/*==========================================
+BUTTON
+==========================================*/
+.booking-history-cancel-btn-outline{
+        margin-top:8px !important;
+        padding:5px 10px !important;
+        border-radius:12px !important;
+        text-transform:none !important;
+        font-weight:bold !important;
+}
+/*==========================================
+RATING
+==========================================*/
+.booking-history-rating-section{
+        margin-top:24px;
+}
+.booking-history-feedback{
+        margin-top:16px !important;
+}
+/*==========================================
+REVIEW BUTTON
+==========================================*/
+.booking-history-submit-review-btn{
+        margin-top:16px !important;
+        border-radius:12px !important;
+        text-transform:none !important;
+        background:linear-gradient(
+        90deg,
+        #16a34a,
+        #22c55e
+    ) !important;
+}
+/*==========================================
+USER RATING
+==========================================*/
+.booking-history-user-rating{
+        margin-top:16px !important;
+        font-weight:bold !important;
+        color:#166534;
+}
+/* =========================================== */
+/* -------------------RESPONSIVE---------------- */
+/* ================================================= */
+@media (max-width:1400px){
+
+    /* No changes.
+       Desktop/Laptop design remains the same. */
+
+}
+/*==========================================
+1200px
+==========================================*/
+
+@media (max-width:1200px){
+
+.booking-history-page{
+    padding:110px 20px 30px;
+}
+
+.booking-history-title{
+    font-size:2.2rem !important;
+}
+
+.booking-history-card{
+    padding:18px 20px !important;
+}
+
+.booking-history-info-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    padding:14px;
+}
+
+.booking-history-collector-right{
+    gap:28px;
+    margin-right:0;
+}
+
+.booking-history-stepper-content .MuiStepLabel-label{
+    font-size:.78rem;
+}
+
+}
+/*==========================================
+768px
+==========================================*/
+
+@media (max-width:768px){
+
+.booking-history-page{
+    padding:90px 16px 24px;
+}
+
+.booking-history-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+}
+
+.booking-history-title{
+    font-size:2rem !important;
+}
+
+.booking-history-actions{
+    width:100%;
+    justify-content:space-between;
+}
+
+.booking-history-filter{
+    width:180px;
+}
+
+.booking-history-card{
+    padding:18px !important;
+}
+
+.booking-history-card-header{
+    align-items:flex-start;
+}
+
+.booking-history-status-chip{
+    align-self:flex-start;
+}
+
+.booking-history-info-grid{
+    grid-template-columns:1fr;
+    gap:16px;
+}
+
+.booking-history-collector{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.booking-history-collector-right{
+    width:100%;
+    justify-content:flex-start;
+    gap:40px;
+}
+
+.booking-history-stepper-content{
+    overflow-x:auto;
+}
+
+}
+/*==========================================
+576px
+==========================================*/
+
+@media (max-width:576px){
+
+.booking-history-page{
+    padding:80px 12px 20px;
+}
+
+.booking-history-title{
+    font-size:1.6rem !important;
+}
+
+.booking-history-subtitle{
+    font-size:.9rem;
+}
+
+.booking-history-actions{
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+}
+
+.booking-history-filter{
+    width:100%;
+}
+
+.booking-history-avatar{
+    width:42px !important;
+    height:42px !important;
+}
+
+.booking-history-card{
+    padding:16px !important;
+    border-radius:18px !important;
+}
+
+.booking-history-card-header{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.booking-history-card-left{
+    gap:10px;
+}
+
+.booking-history-status-chip{
+    height:42px !important;
+}
+
+.booking-history-status-chip .MuiChip-label{
+    font-size:.9rem;
+}
+
+.booking-history-info-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+    padding:12px;
+}
+
+.booking-history-info-column{
+    gap:8px;
+}
+
+.booking-history-collector{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:16px;
+}
+
+.booking-history-collector-left{
+    width:100%;
+}
+
+.booking-history-collector-right{
+    width:100%;
+    justify-content:space-between;
+    gap:20px;
+    margin-right:0;
+}
+
+.booking-history-collector-item{
+    min-width:auto;
+}
+
+.booking-history-collector-label{
+    font-size:12px !important;
+}
+
+.booking-history-collector-value{
+    font-size:14px;
+}
+
+.booking-history-stepper{
+    overflow-x:auto;
+}
+
+.booking-history-stepper-content{
+    min-width:650px;
+}
+
+.booking-history-cancel-btn-outline,
+.booking-history-submit-review-btn{
+    width:100%;
+}
+
+.booking-history-feedback{
+    width:100%;
+}
+
+.booking-history-empty-card{
+    padding:28px !important;
+}
+
+.booking-history-cancel-card{
+    width:100%;
+    max-width:340px;
+    padding:28px !important;
+}
+
+}

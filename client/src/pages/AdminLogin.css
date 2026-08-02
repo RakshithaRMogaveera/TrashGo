@@ -1,0 +1,206 @@
+
+/*==========================================
+LOGO
+==========================================*/
+
+.admin-logo-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:12px;
+}
+
+.admin-logo-icon{
+
+    font-size:3.2rem !important;
+
+    margin-bottom:8px;
+
+    animation:rotateRecycle 10s linear infinite;
+}
+
+.admin-logo-text{
+
+    color:#2f5815;
+
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    letter-spacing:.5px;
+
+    font-family:Papyrus,fantasy !important;
+
+    margin-bottom:8px !important;
+}
+/*==========================================
+ADMIN LOGIN PAGE
+==========================================*/
+
+.admin-login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:40px 20px;
+
+    background:url("/images/bg6.png") center/cover no-repeat;
+
+    position:relative;
+}
+
+.admin-login-page::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+}
+
+/*==========================================
+CARD
+==========================================*/
+
+.admin-login-card{
+
+    position:relative;
+
+    z-index:1;
+
+    padding:40px !important;
+
+    border-radius:24px !important;
+
+    background:rgba(255,255,255,.95) !important;
+
+    backdrop-filter:blur(14px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18) !important;
+}
+
+/*==========================================
+TITLE
+==========================================*/
+
+.admin-login-title{
+
+    text-align:center;
+
+    font-size:2rem !important;
+
+    font-weight:600 !important;
+
+    color:#1d4f2c;
+
+    margin-bottom:32px !important;
+}
+
+/*==========================================
+FORM
+==========================================*/
+
+.admin-login-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+}
+
+.admin-login-form .MuiOutlinedInput-root{
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.8);
+}
+
+.admin-login-form .MuiOutlinedInput-root fieldset{
+
+    border-color:#dbe7db;
+}
+
+.admin-login-form .MuiOutlinedInput-root:hover fieldset{
+
+    border-color:#57b85b;
+}
+
+.admin-login-form .MuiOutlinedInput-root.Mui-focused fieldset{
+
+    border-color:#2ea44f;
+
+    border-width:2px;
+}
+
+.admin-login-form .MuiInputLabel-root{
+
+    color:#6b7280;
+}
+
+.admin-login-form .MuiInputLabel-root.Mui-focused{
+
+    color:#2ea44f;
+}
+
+.admin-login-form .MuiOutlinedInput-input{
+
+    padding-top:14px;
+
+    padding-bottom:14px;
+}
+
+/*==========================================
+BUTTON
+==========================================*/
+
+.admin-login-btn{
+
+    margin-top:8px !important;
+
+    padding:14px 0 !important;
+
+    border-radius:14px !important;
+
+    text-transform:none !important;
+
+    font-size:1rem !important;
+
+    font-weight:700 !important;
+
+    background:linear-gradient(
+        135deg,
+        #2e8b57,
+        #1f6b3d
+    ) !important;
+
+    box-shadow:0 12px 28px rgba(46,139,87,.35) !important;
+
+    transition:.3s !important;
+}
+
+.admin-login-btn:hover{
+
+    transform:translateY(-2px);
+
+    background:linear-gradient(
+        135deg,
+        #27794b,
+        #185832
+    ) !important;
+
+    box-shadow:0 16px 35px rgba(46,139,87,.45) !important;
+}

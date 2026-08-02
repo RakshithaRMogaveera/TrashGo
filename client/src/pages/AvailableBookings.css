@@ -1,0 +1,360 @@
+/* ===========================
+   PAGE
+=========================== */
+.available-bookings-page{
+
+    min-height:100vh;
+
+    padding:110px 28px 40px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+.available-bookings-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+    background-image: url("/images/bg6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    filter: blur(1px);
+  transform: scale(1.05);
+    z-index: -2;
+}
+.available-bookings-page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+    background: rgba(0, 0, 0, 0.18);
+    z-index: -1;
+}
+/*==========================================
+HERO
+==========================================*/
+
+.available-hero{
+
+    max-width:1450px;
+
+    margin:0 auto 34px;
+
+    padding:30px 36px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.16);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.14);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+}
+.available-hero-left{
+
+    flex:1;
+}
+
+.available-hero-right{
+
+    display:flex;
+
+    gap:18px;
+}
+.available-heading{
+font-size:2.1rem !important;
+
+    font-weight:600 !important;
+
+    color:#173b2b;
+
+    margin-bottom:12px !important;
+}
+
+.available-subtitle{
+
+    max-width:620px;
+
+   
+
+    color:#425466;
+
+    line-height:1.7;
+
+    font-size:.98rem !important;
+}
+/*==========================================
+SUMMARY
+==========================================*/
+
+
+.summary-card{
+
+    width:190px;
+
+    height:130px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.20);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.35s;
+}
+
+.summary-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+.summary-value{
+
+    font-size:2rem !important;
+
+    font-weight:800 !important;
+
+    color:#16a34a;
+}
+
+.summary-label{
+
+    margin-top:8px !important;
+
+    color:#475569;
+}
+
+/* ===========================
+   BOOKING CARD
+=========================== */
+.booking-card {
+  max-width:1450px;
+
+    margin:20px auto 24px !important; 
+     border-radius: 28px !important;
+    background: rgba(255, 255, 255, 0.88) !important;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+    transition: 0.3s ease;
+}
+.booking-card:hover {
+  transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18) !important;
+}
+.booking-content {
+  padding: 50px !important;
+}
+/* ===========================
+   GRID
+=========================== */
+.booking-grid {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+/* ===========================
+   LEFT COLUMN
+=========================== */
+.left-section {
+}
+.user-info {
+  display: flex;
+    align-items: center;
+    gap: 18px !important;
+    margin-bottom: 24px !important;
+}
+.avatar-circle {
+  width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #dbeafe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar-icon {
+  color: #2563eb !important;
+    font-size: 34px !important;
+}
+.user-name {
+  font-size: 1.25rem;
+    font-weight: 700;
+}
+.user-phone {
+  color: #64748b;
+}
+.location-block {
+  margin-bottom: 24px;
+}
+.location-title {
+  font-weight: 700;
+    margin-bottom: 8px;
+}
+.pickup-title {
+  color: #16a34a;
+  
+}
+.dump-title {
+  color: #dc2626;
+}
+.location-row {
+  display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+/* ===========================
+   CENTER COLUMN
+=========================== */
+.middle-section {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.info-box {
+  width: 170px;
+    padding: 10px 0;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+.waste-box {
+  background: #dcfce7;
+}
+.mode-box {
+  background: #dbeafe;
+}
+.bag-box {
+  background: #fef3c7;
+}
+/* ===========================
+   RIGHT COLUMN
+=========================== */
+.right-section {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fare {
+  font-size: 2.5rem !important;
+    font-weight: 700;
+    color: #15803d;
+}
+.status-chip {
+  padding: 8px 24px;
+    border-radius: 30px;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+.accept-btn {
+  width: 100%;
+    padding: 15px 0 !important;
+    border-radius: 40px !important;
+    text-transform: none !important;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+}
+.accept-btn:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d) !important;
+}
+/*==========================================
+EMPTY STATE
+==========================================*/
+
+.empty-bookings{
+
+    max-width:650px;
+
+    margin:90px auto;
+
+    padding:50px;
+
+    border-radius:28px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.16);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.18);
+}
+
+.empty-icon{
+
+    font-size:4rem !important;
+}
+
+.empty-title{
+
+    margin-top:16px !important;
+
+    font-size:2rem !important;
+
+    font-weight:700 !important;
+}
+
+.empty-subtitle{
+
+    margin-top:10px !important;
+
+    color:#64748b;
+}
+/*==========================================
+ANIMATION
+==========================================*/
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.available-hero,
+.available-summary,
+.booking-card{
+
+    animation:fadeUp .6s ease;
+}

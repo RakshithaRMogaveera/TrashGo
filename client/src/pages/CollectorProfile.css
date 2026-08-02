@@ -1,0 +1,1085 @@
+/*=========================================================
+COLLECTOR PROFILE PAGE
+=========================================================*/
+
+.collector-profile-page{
+
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    padding:8px 24px 24px;
+
+    position:relative;
+    overflow:hidden;
+
+    background-image:url("/images/bg8.png");
+    background-size:cover;
+    background-position:center;
+
+}
+
+.collector-profile-page::before{
+
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.45)
+    );
+
+}
+
+
+/*=========================================================
+CONTAINER
+=========================================================*/
+
+.collector-profile-container{
+
+    width:100%;
+    max-width:1500px;
+
+    margin:100px auto 0;
+
+    position:relative;
+    z-index:2;
+
+}
+
+
+/*=========================================================
+75 : 25 LAYOUT
+=========================================================*/
+
+.collector-profile-layout{
+
+    display:grid;
+
+    grid-template-columns:
+        3fr
+        1fr;
+
+    gap:28px;
+
+    align-items:start;
+
+}
+
+
+/*=========================================================
+LEFT SIDE
+=========================================================*/
+
+.collector-profile-main{
+
+    width:100%;
+
+}
+
+
+/*=========================================================
+RIGHT SIDE
+=========================================================*/
+
+.collector-profile-sidebar{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+
+/*=========================================================
+MAIN CARD
+=========================================================*/
+
+.collector-profile-card{
+
+    position:relative;
+    overflow:hidden;
+
+    border-radius:30px !important;
+
+    padding:25px 30px 24px !important;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(255,255,255,.96),
+        rgba(245,255,246,.97)
+    ) !important;
+
+    border:1px solid rgba(255,255,255,.55);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 22px 55px rgba(0,0,0,.14) !important;
+
+}
+
+/*=========================================================
+BACKGROUND GLOW
+=========================================================*/
+
+.collector-profile-glow-one{
+
+    position:absolute;
+
+    width:320px;
+    height:320px;
+
+    left:-120px;
+    top:-120px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(34,197,94,.28),
+
+        transparent 70%
+
+    );
+
+}
+
+.collector-profile-glow-two{
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    right:-90px;
+    bottom:-90px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(187,247,208,.45),
+
+        transparent 70%
+
+    );
+
+}
+
+
+/*=========================================================
+HERO
+=========================================================*/
+
+.collector-profile-hero{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-bottom:20px;
+
+}
+
+
+/*=========================================================
+AVATAR
+=========================================================*/
+
+.collector-profile-avatar-wrapper{
+
+    flex-shrink:0;
+
+}
+
+.collector-profile-avatar{
+
+    width:120px !important;
+
+    height:120px !important;
+
+    border-radius:50% !important;
+
+    border:6px solid #24b35a;
+
+    background:#fff;
+
+    box-shadow:
+
+    0 15px 45px
+
+    rgba(34,197,94,.30);
+
+}
+
+
+/*=========================================================
+TEXT
+=========================================================*/
+
+.collector-profile-heading{
+
+    flex:1;
+
+}
+
+.collector-profile-name{
+
+    font-size:2.2rem !important;
+
+    font-weight:800 !important;
+
+    color:#1f2937;
+
+    line-height:1.15;
+
+}
+
+.collector-profile-role{
+
+    margin-top:2px !important;
+
+    display:inline-flex;
+
+    padding:6px 20px;
+
+    border-radius:999px;
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    font-size:.95rem !important;
+
+    font-weight:700 !important;
+
+}
+
+.collector-profile-tagline{
+
+    margin-top:10px !important;
+
+    max-width:600px;
+
+    color:#64748b;
+
+    line-height:1.8 !important;
+
+    font-size:15px !important;
+
+}
+/*=========================================================
+DETAILS CARD
+=========================================================*/
+
+.collector-details-card{
+
+    border-radius:24px !important;
+
+    overflow:hidden;
+
+    background:#ffffff !important;
+
+    border:1px solid rgba(34,197,94,.10);
+
+    box-shadow:
+    0 10px 35px rgba(15,23,42,.06) !important;
+
+}
+
+
+/*=========================================================
+EDIT MODE
+=========================================================*/
+
+.collector-details-edit{
+
+    padding:30px;
+
+}
+
+.collector-details-edit .MuiTextField-root{
+
+    margin-bottom:20px;
+
+}
+
+.collector-details-edit .MuiOutlinedInput-root{
+
+    border-radius:14px;
+
+}
+
+
+/*=========================================================
+DETAIL ROW
+=========================================================*/
+
+.collector-detail-row{
+
+    display:grid;
+
+    grid-template-columns:
+        50px
+        200px
+        1fr;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 25px;
+
+    transition:.25s;
+
+}
+
+.collector-detail-row:hover{
+
+    background:#f8fff9;
+
+}
+
+
+/*=========================================================
+ICON
+=========================================================*/
+
+.collector-detail-icon{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#ecfdf3;
+
+    color:#16a34a;
+
+}
+
+
+/*=========================================================
+LABEL
+=========================================================*/
+
+.collector-detail-label{
+
+    font-size:15px !important;
+
+    font-weight:600 !important;
+
+    color:#64748b;
+
+}
+
+
+/*=========================================================
+VALUE
+=========================================================*/
+
+.collector-detail-value{
+
+    font-size:15px !important;
+
+    font-weight:700 !important;
+
+    color:#1f2937;
+
+    word-break:break-word;
+
+}
+
+
+/*=========================================================
+DIVIDER
+=========================================================*/
+
+.collector-details-card .MuiDivider-root{
+
+    margin:0 24px;
+
+    border-color:#edf2f7;
+
+}
+
+
+/*=========================================================
+ACTION AREA
+=========================================================*/
+
+.collector-action-area{
+
+    margin-top:32px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+
+/*=========================================================
+EDIT BUTTON
+=========================================================*/
+
+.collector-edit-btn{
+
+    height:52px !important;
+
+    border-radius:16px !important;
+
+    text-transform:none !important;
+
+    font-size:15px !important;
+
+    font-weight:700 !important;
+
+    background:
+    linear-gradient(
+        90deg,
+        #16a34a,
+        #22c55e
+    ) !important;
+
+    box-shadow:
+    0 10px 25px rgba(34,197,94,.28) !important;
+
+}
+
+.collector-edit-btn:hover{
+
+    background:
+    linear-gradient(
+        90deg,
+        #15803d,
+        #16a34a
+    ) !important;
+
+}
+
+
+/*=========================================================
+CANCEL BUTTON
+=========================================================*/
+
+.collector-cancel-btn{
+
+    height:52px !important;
+
+    border-radius:16px !important;
+
+    text-transform:none !important;
+
+    font-size:15px !important;
+
+    font-weight:700 !important;
+
+    color:#16a34a !important;
+
+    border:2px solid #22c55e !important;
+
+}
+
+
+/*=========================================================
+SAVE BUTTON
+=========================================================*/
+
+.collector-save-btn{
+
+    height:52px !important;
+
+    border-radius:16px !important;
+
+    text-transform:none !important;
+
+    font-size:15px !important;
+
+    font-weight:700 !important;
+
+    background:
+    linear-gradient(
+        90deg,
+        #2563eb,
+        #3b82f6
+    ) !important;
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,.25) !important;
+
+}
+
+.collector-save-btn:hover{
+
+    background:
+    linear-gradient(
+        90deg,
+        #1d4ed8,
+        #2563eb
+    ) !important;
+
+}
+/*=========================================================
+SIDEBAR CARDS
+=========================================================*/
+
+.collector-security-card,
+.collector-dashboard-card,
+.collector-thankyou-card{
+
+    background:
+    rgba(255,255,255,.95) !important;
+
+    border-radius:24px !important;
+
+    padding:26px !important;
+
+    border:1px solid rgba(34,197,94,.10);
+
+    box-shadow:
+    0 15px 40px rgba(15,23,42,.08) !important;
+
+}
+
+
+/*=========================================================
+SECURITY HEADER
+=========================================================*/
+
+.collector-security-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+}
+
+.collector-security-header-open{
+
+    margin-bottom:24px;
+
+}
+
+.collector-security-title-row{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:8px;
+
+}
+
+.collector-security-title{
+
+    font-size:1.25rem !important;
+
+    font-weight:700 !important;
+
+    color:#1f2937;
+
+}
+
+.collector-security-subtitle{
+
+    color:#64748b;
+
+    font-size:14px !important;
+
+    line-height:1.7 !important;
+
+}
+
+
+/*=========================================================
+SECURITY BUTTON
+=========================================================*/
+
+.collector-security-btn{
+
+    border-radius:12px !important;
+
+    text-transform:none !important;
+
+    font-weight:700 !important;
+
+    padding:10px 18px !important;
+
+    color:#c98d14 !important;
+
+    border:2px solid #f4d28d !important;
+
+}
+
+.collector-security-btn:hover{
+
+    background:#fff8e8 !important;
+
+}
+
+
+/*=========================================================
+PASSWORD FORM
+=========================================================*/
+
+.collector-password-form{
+
+    margin-top:26px;
+
+}
+
+.collector-password-field{
+
+    margin-bottom:18px !important;
+
+}
+
+.collector-password-field .MuiOutlinedInput-root{
+
+    border-radius:14px;
+
+}
+
+
+/*=========================================================
+PASSWORD BUTTON
+=========================================================*/
+
+.collector-password-btn{
+
+    margin-top:10px !important;
+
+    height:50px !important;
+
+    border-radius:14px !important;
+
+    text-transform:none !important;
+
+    font-weight:700 !important;
+
+    background:
+    linear-gradient(
+        90deg,
+        #2563eb,
+        #3b82f6
+    ) !important;
+
+}
+
+.collector-password-btn:hover{
+
+    background:
+    linear-gradient(
+        90deg,
+        #1d4ed8,
+        #2563eb
+    ) !important;
+
+}
+
+
+/*=========================================================
+DASHBOARD BUTTON
+=========================================================*/
+
+.collector-dashboard-btn{
+
+    width:100%;
+
+    height:54px !important;
+
+    border-radius:16px !important;
+
+    text-transform:none !important;
+
+    font-size:15px !important;
+
+    font-weight:700 !important;
+
+    background:
+    linear-gradient(
+        90deg,
+        #16a34a,
+        #22c55e
+    ) !important;
+
+    box-shadow:
+    0 12px 28px rgba(34,197,94,.30);
+
+}
+
+.collector-dashboard-btn:hover{
+
+    background:
+    linear-gradient(
+        90deg,
+        #15803d,
+        #16a34a
+    ) !important;
+
+}
+
+
+/*=========================================================
+THANK YOU CARD
+=========================================================*/
+
+.collector-thankyou-card{
+
+    text-align:center;
+
+}
+
+.collector-thankyou-title{
+
+    font-size:1.35rem !important;
+
+    font-weight:800 !important;
+
+    color:#166534;
+
+    margin-bottom:14px !important;
+
+}
+
+.collector-thankyou-text{
+
+    color:#64748b;
+
+    line-height:1.9 !important;
+
+    font-size:14px !important;
+
+}
+
+
+/*=========================================================
+SNACKBAR
+=========================================================*/
+
+.MuiSnackbar-root{
+
+    z-index:2000;
+
+}
+
+.MuiAlert-root{
+
+    border-radius:14px !important;
+
+}
+/*=========================================================
+1200px
+=========================================================*/
+
+@media (max-width:1200px){
+
+    .collector-profile-container{
+
+        max-width:1100px;
+
+    }
+
+    .collector-profile-layout{
+
+        grid-template-columns:2.2fr 1fr;
+
+        gap:22px;
+
+    }
+
+    .collector-profile-card{
+
+        padding:34px !important;
+
+    }
+
+    .collector-profile-avatar{
+
+        width:150px !important;
+        height:150px !important;
+
+    }
+
+    .collector-profile-name{
+
+        font-size:2.15rem !important;
+
+    }
+
+}
+
+
+/*=========================================================
+992px
+=========================================================*/
+
+@media (max-width:992px){
+
+    .collector-profile-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .collector-profile-sidebar{
+
+        margin-top:24px;
+
+    }
+
+}
+
+
+/*=========================================================
+768px
+=========================================================*/
+
+@media (max-width:768px){
+
+    .collector-profile-page{
+
+        padding:80px 16px 24px;
+
+    }
+
+    .collector-profile-card{
+
+        padding:24px !important;
+
+        border-radius:22px !important;
+
+    }
+
+    .collector-profile-hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:18px;
+
+    }
+
+    .collector-profile-avatar{
+
+        width:120px !important;
+
+        height:120px !important;
+
+    }
+
+    .collector-profile-name{
+
+        font-size:1.8rem !important;
+
+    }
+
+    .collector-profile-role{
+
+        margin-inline:auto;
+
+    }
+
+    .collector-profile-tagline{
+
+        max-width:100%;
+
+    }
+
+    .collector-detail-row{
+
+        grid-template-columns:
+        44px
+        120px
+        1fr;
+
+        gap:12px;
+
+        padding:16px;
+
+    }
+
+}
+
+
+/*=========================================================
+576px
+=========================================================*/
+
+@media (max-width:576px){
+
+    .collector-profile-page{
+
+        padding:74px 10px 20px;
+
+    }
+
+    .collector-profile-card{
+
+        padding:18px !important;
+
+    }
+
+    .collector-profile-avatar{
+
+        width:105px !important;
+
+        height:105px !important;
+
+        border-width:4px;
+
+    }
+
+    .collector-profile-name{
+
+        font-size:1.45rem !important;
+
+    }
+
+    .collector-profile-role{
+
+        font-size:.8rem !important;
+
+    }
+
+    .collector-profile-tagline{
+
+        font-size:13px !important;
+
+    }
+
+    .collector-detail-row{
+
+        display:flex;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+    .collector-detail-icon{
+
+        width:38px;
+
+        height:38px;
+
+        flex-shrink:0;
+
+    }
+
+    .collector-detail-label{
+
+        width:95px;
+
+        flex-shrink:0;
+
+        font-size:13px !important;
+
+    }
+
+    .collector-detail-value{
+
+        flex:1;
+
+        font-size:13px !important;
+
+    }
+
+    .collector-security-header{
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+    .collector-security-btn{
+
+        width:100%;
+
+    }
+
+}
+
+
+/*=========================================================
+480px
+=========================================================*/
+
+@media (max-width:480px){
+
+    .collector-profile-card,
+    .collector-security-card,
+    .collector-dashboard-card,
+    .collector-thankyou-card{
+
+        border-radius:18px !important;
+
+    }
+
+    .collector-edit-btn,
+    .collector-save-btn,
+    .collector-dashboard-btn,
+    .collector-password-btn,
+    .collector-cancel-btn{
+
+        height:48px !important;
+
+        font-size:14px !important;
+
+    }
+
+    .collector-thankyou-title{
+
+        font-size:1.15rem !important;
+
+    }
+
+    .collector-thankyou-text{
+
+        font-size:13px !important;
+
+    }
+
+}

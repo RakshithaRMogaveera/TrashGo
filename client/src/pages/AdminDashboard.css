@@ -1,0 +1,1040 @@
+/* =========================
+   ADMIN DASHBOARD
+========================= */
+
+.admin-dashboard{
+    min-height:100vh;
+    background:#f4f7f9;
+    padding:40px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(135deg,#ffffff,#eef8ef);
+    border-radius:24px;
+    padding:28px 35px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    margin-bottom:35px;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-text{
+    color:#2f5815;
+    font-size:1.8rem !important;
+    font-weight:800 !important;
+    letter-spacing:.5px !important;
+    font-family:Papyrus,fantasy !important;
+}
+
+.logo-icon{
+    color:#43a047;
+    font-size:2.2rem !important;
+    animation:rotateRecycle 10s linear infinite;
+}
+
+@keyframes rotateRecycle{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.admin-title{
+    font-size:2rem !important;
+    font-weight:800 !important;
+    color:#204d1d;
+    margin-bottom:8px !important;
+}
+
+.admin-subtitle{
+    color:#6b7280;
+    font-size:1rem !important;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats-grid{
+    display:flex !important;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin:40px auto !important;
+}
+
+.stats-grid .MuiGrid-item{
+    flex:0 0 auto;
+    padding-top:0 !important;
+}
+
+.stat-card{
+
+    width:210px;
+    height:210px;
+
+    border-radius:24px !important;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+    border:none !important;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08) !important;
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.14) !important;
+}
+
+/* remove MUI default spacing */
+
+.stat-card .MuiCardContent-root{
+
+    width:100%;
+
+    height:100%;
+
+    padding:28px !important;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.stat-card .MuiCardContent-root:last-child{
+
+    padding-bottom:26px !important;
+}
+
+.stat-top{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:10px;
+}
+
+.stat-icon{
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:26px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    flex-shrink:0;
+}
+
+.stat-icon svg{
+
+    font-size:2.8rem !important;
+}
+
+.stat-number{
+
+    margin:0 !important;
+
+    font-size:2.6rem !important;
+
+    font-weight:800 !important;
+
+    line-height:1;
+
+    color:#1f2a44;
+    margin-bottom: 0px !important;
+}
+
+.stat-label{
+
+  
+
+    font-size:1rem !important;
+
+    font-weight:700 !important;
+
+    color:#667085;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    line-height:1.3;
+}
+
+/* backgrounds */
+
+.bookings-card{
+    background:linear-gradient(to bottom,#ffffff,#f3f9ff);
+}
+
+.collectors-card{
+    background:linear-gradient(to bottom,#ffffff,#f3fff5);
+}
+
+.completed-card{
+    background:linear-gradient(to bottom,#ffffff,#f2ffff);
+}
+
+.revenue-card{
+    background:linear-gradient(to bottom,#ffffff,#fff8e8);
+}
+
+.bookings-icon{
+    background:linear-gradient(135deg,#42a5f5,#1976d2);
+}
+
+.collectors-icon{
+    background:linear-gradient(135deg,#66bb6a,#2e7d32);
+}
+
+.completed-icon{
+    background:linear-gradient(135deg,#2ec7dc,#0097a7);
+}
+
+.revenue-icon{
+    background:linear-gradient(135deg,#ffca28,#fb8c00);
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.admin-dashboard h5{
+    font-weight:700 !important;
+    color:#234a20;
+    margin:25px 0 18px !important;
+}
+/* =========================
+   BOOKINGS
+========================= */
+
+.section-title{
+    display:flex;
+    align-items:center;
+    color:#214d1d;
+    font-weight:700 !important;
+    margin-bottom:20px !important;
+}
+
+.booking-card{
+
+    width:100%;
+
+    max-width:100%;
+
+    box-sizing:border-box;
+
+    border-radius:22px !important;
+
+    padding:22px;
+
+    background:#b9b1b1;
+
+    border:1px solid #edf2f7;
+
+    box-shadow:0 8px 28px rgba(0,0,0,.08) !important;
+
+    transition:.35s;
+}
+.dashboard-left .MuiGrid-item{
+
+    width:100%;
+
+    max-width:100%;
+
+    flex-basis:100%;
+
+    display:flex;
+}
+.dashboard-left .MuiPaper-root{
+
+    width:100%;
+}
+.booking-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12) !important;
+}
+
+.booking-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.booking-user{
+    font-size:1.05rem !important;
+    font-weight:700 !important;
+    display:flex;
+    align-items:center;
+    color:#1f2937;
+}
+
+.booking-collector{
+    margin-top:10px !important;
+    display:flex;
+    align-items:center;
+    color:#6b7280;
+}
+
+.booking-info{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.booking-info p{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    color:#4b5563;
+
+    font-weight:500;
+
+    line-height:1.4;
+}
+.booking-info p:first-child{
+
+    min-height:40px;
+
+    display:flex;
+
+    align-items:flex-start;
+}
+
+.info-icon{
+
+    margin-top:2px;
+
+    flex-shrink:0;
+
+    color:#2e7d32;
+
+    font-size:20px !important;
+}
+
+.payment-row{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:18px;
+}
+
+/* Status Chips */
+
+.status-chip{
+    color:#fff !important;
+    font-weight:700 !important;
+}
+
+.status-chip.pending{
+    background:#fb8c00 !important;
+}
+
+.status-chip.accepted{
+    background:#1976d2 !important;
+}
+
+.status-chip.reached-pickup{
+    background:#8e24aa !important;
+}
+
+.status-chip.collected{
+    background:#00897b !important;
+}
+
+.status-chip.reached-dumping-area{
+    background:#6d4c41 !important;
+}
+
+.status-chip.completed{
+    background:#2e7d32 !important;
+}
+
+.status-chip.cancelled{
+    background:#d32f2f !important;
+}
+/* ==========================
+   COLLECTORS
+========================== */
+
+.collector-card{
+
+    width:100%;
+
+    min-height:210px;
+
+    padding:24px !important;
+
+    border-radius:22px !important;
+
+    background:#fff;
+
+    border:1px solid #edf2f7;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.08) !important;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    box-sizing:border-box;
+
+    transition:.35s;
+}
+
+
+
+.collector-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,0,0,.12) !important;
+}
+
+.collector-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid #ececec;
+}
+
+.collector-avatar{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:linear-gradient(
+        135deg,
+        #43a047,
+        #2e7d32
+    );
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.collector-avatar svg{
+    font-size:2rem;
+}
+
+.collector-name{
+    font-size:1.15rem !important;
+    font-weight:700 !important;
+    color:#1f2937;
+}
+
+.collector-phone{
+    color:#6b7280;
+    display:flex;
+    align-items:center;
+    margin-top:6px !important;
+}
+
+.collector-detail{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:18px 0 !important;
+
+    font-size:15px !important;
+
+    color:#475569;
+}
+
+.collector-footer{
+
+    margin-top:auto;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding-top:20px;
+}
+
+.collector-footer button{
+    border-radius:12px;
+    text-transform:none;
+    font-weight:600;
+    padding:8px 20px;
+}
+.collector-scroll::-webkit-scrollbar{
+    width:8px;
+}
+
+.collector-scroll::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.collector-scroll::-webkit-scrollbar-thumb{
+    background:#c8d9c4;
+    border-radius:20px;
+}
+/* ==========================================
+   50-50 DASHBOARD LAYOUT
+========================================== */
+
+.dashboard-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    margin-top:35px;
+    align-items:start;
+}
+
+.dashboard-left,
+.dashboard-right{
+
+    background:#fff;
+
+    border-radius:24px;
+
+ padding:30px 28px 24px 28px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    height:760px;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.section-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:22px;
+}
+
+.view-all-btn{
+
+    color:#2f5815 !important;
+
+    font-weight:700 !important;
+
+    text-transform:none !important;
+
+    border-radius:12px !important;
+
+    transition:.3s !important;
+}
+
+.view-all-btn:hover{
+
+    background:#eef8ef !important;
+
+    transform:translateX(5px);
+}
+
+/* ==========================================
+   INTERNAL SCROLL
+========================================== */
+
+.booking-scroll{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:10px 18px 10px 6px;
+
+    margin-top:6px;
+     background:#fbfcfb;
+
+    border-radius:18px;
+
+    padding:16px;
+
+    border:1px solid #edf3ee;
+}
+.collector-scroll{
+    flex:1;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    background:#fbfcfb;
+
+    border:1px solid #edf3ee;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    margin-top:8px;
+
+    box-sizing:border-box;
+}
+.booking-scroll .MuiGrid-container{
+
+    width:100%;
+
+    margin:0 !important;
+
+    row-gap:22px;
+}
+.collector-scroll .MuiGrid-container{
+    width:100% !important;
+
+    margin:0 !important;
+
+    row-gap:22px;
+
+    box-sizing:border-box;
+}
+
+.booking-scroll .MuiGrid-item{
+
+    padding-left:0 !important;
+
+    width:100% !important;
+
+    max-width:100% !important;
+
+    flex-basis:100% !important;
+}
+.collector-scroll .MuiGrid-item{
+
+    width:100% !important;
+
+    max-width:100% !important;
+
+    flex-basis:100% !important;
+
+    padding:0 !important;
+
+    box-sizing:border-box;
+}
+
+.dashboard-left .MuiGrid-container::-webkit-scrollbar,
+.dashboard-right .MuiGrid-container::-webkit-scrollbar{
+
+    width:8px;
+}
+
+.dashboard-left .MuiGrid-container::-webkit-scrollbar-thumb,
+.dashboard-right .MuiGrid-container::-webkit-scrollbar-thumb{
+
+    background:#d6e8d0;
+
+    border-radius:20px;
+}
+
+/* ==========================================
+   SECTION TITLES
+========================================== */
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    color:#1f4721;
+
+    font-size:1.45rem !important;
+
+    font-weight:700 !important;
+}
+/* ==========================================
+            TABLET
+========================================== */
+
+@media (max-width:1024px){
+
+.admin-dashboard{
+    padding:24px;
+}
+
+.admin-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+    padding:24px;
+}
+
+.stats-grid{
+    gap:18px;
+}
+
+.stat-card{
+    width:180px;
+    height:180px;
+}
+
+.stat-number{
+    font-size:2.2rem !important;
+}
+
+.dashboard-content{
+    grid-template-columns:1fr;
+    gap:24px;
+}
+
+.dashboard-left,
+.dashboard-right{
+    height:650px;
+}
+
+}
+
+/* ==========================================
+            MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.admin-dashboard{
+    padding:16px;
+}
+
+/* Header */
+
+.admin-header{
+
+    padding:20px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    align-items:center;
+}
+
+.logo-area{
+
+    justify-content:center;
+
+    width:100%;
+}
+
+.admin-title{
+
+    font-size:1.6rem !important;
+}
+
+.admin-subtitle{
+
+    font-size:.9rem !important;
+}
+
+/* Stats */
+
+.stats-grid{
+
+    display:grid !important;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:16px;
+
+    margin:24px 0 !important;
+}
+
+.stats-grid .MuiGrid-item{
+
+    width:100% !important;
+}
+
+.stat-card{
+
+    width:100%;
+
+    height:165px;
+}
+
+.stat-card .MuiCardContent-root{
+
+    padding:18px !important;
+}
+
+.stat-icon{
+
+    width:56px;
+
+    height:56px;
+}
+
+.stat-icon svg{
+
+    font-size:2rem !important;
+}
+
+.stat-number{
+
+    font-size:2rem !important;
+}
+
+.stat-label{
+
+    font-size:.9rem !important;
+
+    height:auto;
+}
+
+/* Dashboard */
+
+.dashboard-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.dashboard-left,
+.dashboard-right{
+
+    height:560px;
+
+    padding:18px;
+
+    border-radius:18px;
+}
+
+/* Heading */
+
+.section-header{
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:16px;
+}
+
+.section-title{
+
+    font-size:1.15rem !important;
+}
+
+.view-all-btn{
+
+    padding:4px 0 !important;
+}
+
+/* Booking Card */
+
+.booking-card{
+
+    padding:16px !important;
+}
+
+.booking-top{
+
+    align-items:flex-start;
+
+    gap:10px;
+}
+
+.booking-user{
+
+    font-size:1rem !important;
+}
+
+.booking-collector{
+
+    font-size:.9rem !important;
+}
+
+.booking-info{
+
+    gap:8px;
+}
+
+.booking-info p{
+
+    font-size:.88rem;
+}
+
+.payment-row{
+
+    margin-top:14px;
+}
+
+/* Collector Card */
+
+.collector-card{
+
+    min-height:180px;
+
+    padding:18px !important;
+}
+
+.collector-profile{
+
+    gap:12px;
+
+    padding-bottom:14px;
+}
+
+.collector-avatar{
+
+    width:58px;
+
+    height:58px;
+}
+
+.collector-avatar svg{
+
+    font-size:1.6rem !important;
+}
+
+.collector-name{
+
+    font-size:1rem !important;
+}
+
+.collector-phone{
+
+    font-size:.85rem !important;
+}
+
+.collector-detail{
+
+    font-size:.9rem !important;
+
+    margin:12px 0 !important;
+}
+
+.collector-footer{
+
+    flex-wrap:wrap;
+
+    justify-content:flex-end;
+
+    gap:8px;
+}
+
+.collector-footer button{
+
+    width:100%;
+}
+
+/* Scroll */
+
+.booking-scroll,
+.collector-scroll{
+
+    padding:12px;
+}
+
+}
+
+/* ==========================================
+            SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+}
+
+.stat-card{
+
+    height:150px;
+}
+
+.admin-title{
+
+    font-size:1.4rem !important;
+}
+
+.logo-text{
+
+    font-size:1.5rem !important;
+}
+
+.dashboard-left,
+.dashboard-right{
+
+    height:520px;
+}
+
+.section-title{
+
+    font-size:1rem !important;
+}
+
+.booking-card,
+.collector-card{
+
+    padding:14px !important;
+}
+
+.view-all-btn{
+
+    font-size:.8rem !important;
+}
+
+}

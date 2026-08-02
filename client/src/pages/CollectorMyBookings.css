@@ -1,0 +1,770 @@
+/*==========================================
+PAGE
+==========================================*/
+
+.collector-bookings-page{
+    min-height:100vh;
+    padding:110px 28px 40px;
+    position:relative;
+    overflow:hidden;
+}
+
+.collector-bookings-page::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:url("/images/bg6.png") center/cover no-repeat;
+
+    transform:scale(1.05);
+
+    filter:blur(2px);
+
+    z-index:-2;
+}
+
+.collector-bookings-page::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.18);
+
+    z-index:-1;
+}
+
+/*==========================================
+HERO
+==========================================*/
+
+.collector-bookings-hero{
+
+    max-width:1450px;
+
+    margin:0 auto 34px;
+
+    padding:10px 40px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.16);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.14);
+}
+
+.collector-bookings-heading{
+
+    font-size:2.5rem !important;
+
+    font-weight:600 !important;
+
+    color:#18392d;
+
+    margin-bottom:10px !important;
+}
+
+.collector-bookings-subtitle{
+
+    color:#455a64;
+
+    font-size:1.05rem !important;
+
+    max-width:650px;
+
+    line-height:1.7;
+}
+
+.collector-bookings-count{
+
+    width:180px;
+
+    height:140px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.18);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.booking-count-number{
+
+    font-size:2.7rem !important;
+
+    font-weight:800 !important;
+
+    color:#16a34a;
+}
+
+.booking-count-label{
+
+    margin-top:10px !important;
+
+    color:#475569;
+}
+
+/*==========================================
+BOOKING CARD
+==========================================*/
+
+.collector-booking-card{
+
+    max-width:1450px;
+
+    margin:0 auto 20px;
+
+    padding:25px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.88);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:30px;
+
+    align-items:center;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+    transition:.35s;
+}
+
+.collector-booking-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 24px 45px rgba(0,0,0,.18);
+}
+
+/*==========================================
+LEFT
+==========================================*/
+
+.collector-booking-left{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.booking-user-name{
+
+    font-size:1.35rem !important;
+
+    font-weight:700 !important;
+
+    color:#1f2937;
+}
+
+.booking-phone{
+
+    color:#64748b;
+}
+
+.booking-location{
+
+    line-height:1.7;
+
+    font-weight:500;
+}
+
+.booking-location.pickup{
+
+    color:#15803d;
+}
+
+.booking-location.dump{
+
+    color:#dc2626;
+}
+
+/*==========================================
+CENTER
+==========================================*/
+
+.collector-booking-middle{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:30px;
+}
+
+.trash-chip{
+
+    width:200px;
+
+    background:#dcfce7 !important;
+
+    font-weight:700 !important;
+}
+
+.mode-chip{
+
+    width:200px;
+
+    background:#dbeafe !important;
+
+    font-weight:700 !important;
+}
+
+.bag-chip{
+
+    width:200px;
+
+    background:#fef3c7 !important;
+
+    font-weight:700 !important;
+}
+
+/*==========================================
+RIGHT
+==========================================*/
+
+.collector-booking-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+.booking-fare{
+
+    font-size:2.5rem !important;
+
+    font-weight:700 !important;
+
+    color:#15803d;
+
+    margin-bottom:14px !important;
+}
+
+.collector-booking-actions{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:18px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+}
+
+/*==========================================
+BUTTONS
+==========================================*/
+
+.collector-booking-actions .MuiButton-contained{
+
+    border-radius:30px !important;
+
+    padding:11px 22px !important;
+
+    text-transform:none !important;
+
+    font-weight:700 !important;
+
+    background:linear-gradient(
+        135deg,
+        #22c55e,
+        #15803d
+    ) !important;
+}
+
+.collector-booking-actions .MuiButton-outlined{
+
+    border-radius:30px !important;
+
+    padding:11px 20px !important;
+
+    text-transform:none !important;
+
+    font-weight:700 !important;
+}
+
+.collector-cash-btn{
+
+    margin-top:18px !important;
+
+    border-radius:30px !important;
+
+    padding:11px 26px !important;
+
+    text-transform:none !important;
+
+    font-weight:700 !important;
+}
+
+/*==========================================
+EMPTY STATE
+==========================================*/
+
+.collector-empty-state{
+
+    max-width:650px;
+
+    margin:90px auto;
+
+    padding:55px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.16);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    text-align:center;
+}
+
+.collector-empty-icon{
+
+    font-size:4rem !important;
+}
+
+.collector-empty-title{
+
+    margin-top:18px !important;
+
+    font-size:2rem !important;
+
+    font-weight:700 !important;
+}
+
+.collector-empty-subtitle{
+
+    margin-top:10px !important;
+
+    color:#64748b;
+}
+/*==========================================
+CARD ANIMATIONS
+==========================================*/
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.collector-booking-card{
+
+    animation:fadeUp .6s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+    isolation:isolate;
+}
+
+/*==========================================
+SHINE EFFECT
+==========================================*/
+
+.collector-booking-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-180%;
+    left:-45%;
+
+    width:45%;
+    height:360%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.45),
+        transparent
+    );
+
+    transform:rotate(24deg);
+
+    transition:1s;
+
+    pointer-events:none;
+}
+
+.collector-booking-card:hover::before{
+
+    left:145%;
+}
+
+/*==========================================
+GLOW
+==========================================*/
+
+.collector-booking-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    right:-80px;
+    top:-80px;
+
+    border-radius:50%;
+
+    background:rgba(34,197,94,.18);
+
+    filter:blur(75px);
+
+    opacity:.6;
+
+    transition:.35s;
+}
+
+.collector-booking-card:hover::after{
+
+    transform:scale(1.2);
+
+    opacity:.8;
+}
+
+/*==========================================
+HOVER EFFECTS
+==========================================*/
+
+.collector-booking-card:hover
+.booking-fare{
+
+    transform:scale(1.08);
+
+    transition:.35s;
+}
+
+.collector-booking-card:hover
+.booking-user-name{
+
+    color:#15803d;
+}
+
+.collector-booking-card:hover
+.trash-chip{
+
+    transform:translateY(-2px);
+}
+
+.collector-booking-card:hover
+.mode-chip{
+
+    transform:translateY(-2px);
+}
+
+.collector-booking-card:hover
+.bag-chip{
+
+    transform:translateY(-2px);
+}
+
+.trash-chip,
+.mode-chip,
+.bag-chip{
+
+    transition:.3s;
+}
+
+/*==========================================
+BUTTON HOVER
+==========================================*/
+
+.collector-booking-actions .MuiButton-root,
+.collector-cash-btn{
+
+    transition:.35s !important;
+}
+
+.collector-booking-actions .MuiButton-root:hover,
+.collector-cash-btn:hover{
+
+    transform:translateY(-2px);
+}
+
+/*==========================================
+COUNT CARD
+==========================================*/
+
+.collector-bookings-count{
+
+    transition:.35s;
+}
+
+.collector-bookings-count:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 16px 35px rgba(0,0,0,.16);
+}
+
+/*==========================================
+RESPONSIVE 1400
+==========================================*/
+
+@media (max-width:1400px){
+
+.collector-bookings-page{
+
+    padding:110px 24px 34px;
+}
+
+}
+
+/*==========================================
+RESPONSIVE 1200
+==========================================*/
+
+@media (max-width:1200px){
+
+.collector-bookings-page{
+
+    padding:100px 20px 30px;
+}
+
+.collector-bookings-hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:24px;
+}
+
+.collector-bookings-subtitle{
+
+    max-width:100%;
+}
+
+.collector-booking-card{
+
+    grid-template-columns:1fr;
+
+    gap:28px;
+
+    text-align:center;
+}
+
+.collector-booking-left{
+
+    align-items:center;
+}
+
+.collector-booking-middle{
+
+    flex-direction:row;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+}
+
+.collector-booking-right{
+
+    align-items:center;
+}
+
+}
+
+/*==========================================
+RESPONSIVE 768
+==========================================*/
+
+@media (max-width:768px){
+
+.collector-bookings-page{
+
+    padding:90px 16px 24px;
+}
+
+.collector-bookings-hero{
+
+    padding:24px;
+}
+
+.collector-bookings-heading{
+
+    font-size:2.1rem !important;
+}
+
+.collector-bookings-subtitle{
+
+    font-size:.95rem !important;
+}
+
+.collector-bookings-count{
+
+    width:160px;
+
+    height:120px;
+}
+
+.booking-count-number{
+
+    font-size:2.2rem !important;
+}
+
+.collector-booking-card{
+
+    padding:22px;
+}
+
+.trash-chip,
+.mode-chip,
+.bag-chip{
+
+    width:160px;
+}
+
+.collector-booking-actions{
+
+    flex-direction:column;
+
+    width:100%;
+}
+
+.collector-booking-actions .MuiButton-root,
+.collector-cash-btn{
+
+    width:100%;
+}
+
+}
+
+/*==========================================
+RESPONSIVE 480
+==========================================*/
+
+@media (max-width:480px){
+
+.collector-bookings-page{
+
+    padding:84px 12px 18px;
+}
+
+.collector-bookings-heading{
+
+    font-size:1.8rem !important;
+}
+
+.collector-bookings-subtitle{
+
+    font-size:.9rem !important;
+}
+
+.collector-bookings-count{
+
+    width:140px;
+
+    height:110px;
+}
+
+.booking-count-number{
+
+    font-size:2rem !important;
+}
+
+.collector-booking-card{
+
+    padding:18px;
+
+    border-radius:22px;
+}
+
+.booking-user-name{
+
+    font-size:1.15rem !important;
+}
+
+.booking-phone,
+.booking-location{
+
+    font-size:.9rem !important;
+}
+
+.booking-fare{
+
+    font-size:2.2rem !important;
+}
+
+.trash-chip,
+.mode-chip,
+.bag-chip{
+
+    width:100%;
+}
+
+.collector-empty-state{
+
+    padding:32px 20px;
+}
+
+.collector-empty-title{
+
+    font-size:1.6rem !important;
+}
+
+}

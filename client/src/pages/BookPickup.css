@@ -1,0 +1,912 @@
+/*==========================================
+SUCCESS PAGE
+==========================================*/
+.booking-success-page{
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background-image:url("/images/bg4.jpg");
+        background-size:cover;
+        background-position:center;
+        position:relative;
+}
+.booking-success-page::before{
+        content:"";
+        position:absolute;
+        inset:0;
+        background:rgba(0,0,0,.45);
+}
+/*==========================================
+SUCCESS CARD
+==========================================*/
+.booking-success-card{
+        padding:40px !important;
+        width:450px;
+        text-align:center;
+        position:relative;
+        z-index:1;
+        border-radius:24px !important;
+        background:rgba(255,255,255,.95) !important;
+        backdrop-filter:blur(12px);
+        box-shadow:0 20px 40px rgba(0,0,0,.2) !important;
+}
+/*==========================================
+SUCCESS CONTENT
+==========================================*/
+.booking-success-icon{
+        margin-bottom:16px !important;
+}
+.booking-success-title{
+        font-weight:700 !important;
+        color:#166534;
+}
+.booking-success-text{
+        margin-top:16px !important;
+        color:#64748b;
+        line-height:1.8;
+}
+/*==========================================
+SUCCESS BUTTON
+==========================================*/
+.booking-history-btn{
+        margin-top:32px !important;
+        padding:12px 40px !important;
+        border-radius:12px !important;
+        text-transform:none !important;
+        font-weight:700 !important;
+        background:linear-gradient(
+        90deg,
+        #16a34a,
+        #22c55e
+    ) !important;
+}
+.booking-history-btn:hover{
+        background:linear-gradient(
+        90deg,
+        #15803d,
+        #16a34a
+    ) !important;
+}
+/*==========================================
+BOOK PICKUP PAGE
+==========================================*/
+.book-pickup-page{
+        min-height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+        padding:130px 24px 50px;
+        position:relative;
+        background-image:url("/images/bgp.png");
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        overflow:hidden;
+}
+.book-pickup-page::before{
+        content:"";
+        position:absolute;
+        inset:0;
+        background:linear-gradient(
+        rgba(255,255,255,.12),
+        rgba(255,255,255,.20)
+    );
+        backdrop-filter:blur(1.5px);
+}
+/*==========================================
+CONTAINER
+==========================================*/
+.book-pickup-container{
+        display:flex !important;
+        justify-content:center;
+        position:relative;
+        align-items:flex-start;
+        z-index:2;
+          width:100%;
+}
+
+/* -------------------extra------------------------ */
+@keyframes pickupCardEntrance{
+
+    from{
+        opacity:0;
+        transform:translateY(35px) scale(.96);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+
+}
+/*==========================================
+CARD
+==========================================*/
+.book-pickup-card{
+        width:460px;
+        padding:25px 38px 44px !important;
+       
+        border-radius:28px !important;
+        background:rgba(255,255,255,.82) !important;
+        backdrop-filter:blur(22px);
+        -webkit-backdrop-filter:blur(22px);
+        border:1px solid rgba(255,255,255,.65);
+        box-shadow:0 25px 60px rgba(30,90,40,.18) !important;
+        position:relative;
+        z-index:2;
+        animation:pickupCardEntrance .7s ease;
+        position: relative;
+overflow: hidden;
+isolation: isolate;
+border: 1px solid rgba(255,255,255,.18) !important;
+}/*==========================================
+TRAVELLING BORDER
+==========================================*/
+
+.border-light{
+
+    position:absolute;
+
+    display:block;
+
+    pointer-events:none;
+
+    z-index:20;
+
+    overflow:hidden;
+
+}
+
+/* TOP */
+
+.border-light.top{
+
+    top:-1px;
+
+    left:0;
+
+    width:100%;
+    height:5px;
+
+}
+
+.border-light.top::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-35%;
+
+    width:35%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #e3d61a,
+        #34c759,
+        transparent
+    );
+
+    box-shadow:
+    0 0 10px #34c759,
+    0 0 20px rgba(52,199,89,.7);
+
+    animation:topMove 4s linear infinite;
+
+}
+
+/* RIGHT */
+
+.border-light.right{
+
+    top:0;
+
+    right:-1px;
+
+    width:5px;
+
+    height:100%;
+
+}
+
+.border-light.right::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-35%;
+
+    width:100%;
+
+    height:35%;
+
+    background:linear-gradient(
+        180deg,
+        transparent,
+        #e3d61a,
+        #34c759,
+        transparent
+    );
+
+    box-shadow:
+    0 0 10px #34c759,
+    0 0 20px rgba(52,199,89,.7);
+
+    animation:rightMove 4s linear infinite;
+
+    animation-delay:1s;
+
+}
+
+/* BOTTOM */
+
+.border-light.bottom{
+
+    bottom:-1px;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+}
+
+.border-light.bottom::before{
+
+    content:"";
+
+    position:absolute;
+
+    right:-35%;
+
+    width:35%;
+
+    height:100%;
+
+    background:linear-gradient(
+        270deg,
+        transparent,
+       #e3d61a,
+        #34c759,
+        transparent
+    );
+
+    box-shadow:
+    0 0 10px #34c759,
+    0 0 20px rgba(52,199,89,.7);
+
+    animation:bottomMove 4s linear infinite;
+
+    animation-delay:2s;
+
+}
+
+/* LEFT */
+
+.border-light.left{
+
+    top:0;
+
+    left:-1px;
+
+    width:5px;
+
+    height:100%;
+
+}
+
+.border-light.left::before{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-35%;
+
+    width:100%;
+
+    height:35%;
+
+    background:linear-gradient(
+        0deg,
+        transparent,
+       #e3d61a,
+        #34c759,
+        transparent
+    );
+
+    box-shadow:
+    0 0 10px #34c759,
+    0 0 20px rgba(52,199,89,.7);
+
+    animation:leftMove 4s linear infinite;
+
+    animation-delay:3s;
+
+}
+@keyframes topMove{
+
+    from{ left:-35%; }
+
+    to{ left:135%; }
+
+}
+
+@keyframes rightMove{
+
+    from{ top:-35%; }
+
+    to{ top:135%; }
+
+}
+
+@keyframes bottomMove{
+
+    from{ right:-35%; }
+
+    to{ right:135%; }
+
+}
+
+@keyframes leftMove{
+
+    from{ bottom:-35%; }
+
+    to{ bottom:135%; }
+
+}
+/*==========================================
+HEADER
+==========================================*/
+.book-pickup-header{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-bottom:30px;
+}
+.book-pickup-logo{
+        width:64px;
+        height:64px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        
+        font-size:2.5rem !important;
+
+        margin-bottom:10px;
+    animation: rotateRecycle 10s linear infinite;
+}
+@keyframes rotateRecycle {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+.book-pickup-title{
+        font-size:2rem !important;
+        font-weight:700;
+        color:#1d4f2c;
+        line-height:1.2;
+}
+.book-pickup-subtitle{
+        margin-top:8px !important;
+        color:#6d7c74;
+        font-size:.95rem;
+        text-align:center;
+}
+/*==========================================
+FORM
+==========================================*/
+.book-pickup-form{
+        display:flex;
+        flex-direction:column;
+        gap:16px;
+}
+.book-pickup-form .MuiOutlinedInput-root{
+        border-radius:12px;
+        background:rgba(255,255,255,.75);
+}
+.book-pickup-form .MuiOutlinedInput-root fieldset{
+        border-color:#dbe7db;
+}
+.book-pickup-form .MuiOutlinedInput-root:hover fieldset{
+        border-color:#57b85b;
+}
+.book-pickup-form .MuiOutlinedInput-root.Mui-focused fieldset{
+        border-color:#2ea44f;
+        border-width:2px;
+}
+.book-pickup-form .MuiInputLabel-root{
+        color:#6b7280;
+        font-size:.95rem;
+}
+.book-pickup-form .MuiInputLabel-root.Mui-focused{
+        color:#2ea44f;
+}
+.book-pickup-form .MuiOutlinedInput-input{
+        padding-top:14.4px;
+        padding-bottom:14.4px;
+}
+.book-pickup-form .MuiSelect-select{
+        padding-top:14.4px;
+        padding-bottom:14.4px;
+}
+/*==========================================
+ESTIMATED FARE
+==========================================*/
+.book-pickup-fare-box{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:12.8px 20px;
+        border-radius:12px;
+    background:linear-gradient(
+135deg,
+rgba(215,255,221,.85),
+rgba(237,255,239,.95)
+);
+box-shadow:
+0 10px 25px rgba(46,139,87,.08);
+        border:1px solid #cde9d1;
+        margin-bottom:8px;
+}
+.book-pickup-fare-label{
+        color:#2f6d43;
+        font-weight:600;
+        font-size:.95rem;
+}
+.book-pickup-fare-value{
+        color:#166534;
+        font-weight:700;
+        font-size:1.1rem;
+}
+/*==========================================
+SUBMIT BUTTON
+==========================================*/
+.book-pickup-btn{
+        margin-top:8px !important;
+        padding:13.6px 0 !important;
+        width:100%;
+        border-radius:14px !important;
+        text-transform:none !important;
+        font-weight:700 !important;
+        font-size:1rem !important;
+        letter-spacing:.2px !important;
+        background:linear-gradient(
+        135deg,
+        #2e8b57,
+        #1f6b3d
+    ) !important;
+        box-shadow:0 12px 28px rgba(46,139,87,.35) !important;
+        transition:.3s !important;
+}
+.book-pickup-btn:hover{
+        transform:translateY(-2px);
+        background:linear-gradient(
+        135deg,
+        #27794b,
+        #185832
+    ) !important;
+        box-shadow:0 16px 35px rgba(46,139,87,.45) !important;
+}
+/* =============================================================== */
+/* ---------------------RESPONSIVE---------------------------------- */
+/* ================================================================== */
+
+/*==========================================
+1400px
+==========================================*/
+
+@media (max-width:1400px){
+
+    /* No changes.
+       Base CSS is already optimized for laptops. */
+
+}
+/*==========================================
+1200px
+==========================================*/
+
+@media (max-width:1200px){
+
+/* PAGE */
+
+.book-pickup-page{
+
+    padding:120px 22px 40px;
+
+}
+
+/* CARD */
+
+.book-pickup-card{
+
+    width:440px;
+
+    padding:30px 34px 40px !important;
+
+}
+
+/* HEADER */
+
+.book-pickup-header{
+
+    margin-bottom:28px;
+
+}
+
+.book-pickup-logo{
+
+    width:58px;
+    height:58px;
+
+    font-size:2.2rem !important;
+
+    margin-bottom:8px;
+
+}
+
+.book-pickup-title{
+
+    font-size:1.8rem !important;
+
+}
+
+.book-pickup-subtitle{
+
+    font-size:.92rem;
+
+}
+
+/* FORM */
+
+.book-pickup-form{
+
+    gap:15px;
+
+}
+
+.book-pickup-form .MuiOutlinedInput-input{
+
+    padding-top:13px;
+
+    padding-bottom:13px;
+
+}
+
+.book-pickup-form .MuiSelect-select{
+
+    padding-top:13px;
+
+    padding-bottom:13px;
+
+}
+
+/* FARE */
+
+.book-pickup-fare-box{
+
+    padding:12px 18px;
+
+}
+
+/* BUTTON */
+
+.book-pickup-btn{
+
+    padding:13px 0 !important;
+
+    font-size:.95rem !important;
+
+}
+
+}
+/*==========================================
+768px
+==========================================*/
+
+@media (max-width:768px){
+
+/* PAGE */
+
+.book-pickup-page{
+
+    padding:85px 16px 30px;
+
+}
+
+/* CONTAINER */
+
+.book-pickup-container{
+
+    width:100%;
+
+    max-width:100%;
+
+}
+
+/* CARD */
+
+.book-pickup-card{
+
+    width:100%;
+
+    max-width:500px;
+
+    padding:28px 24px 36px !important;
+
+    border-radius:24px !important;
+
+}
+
+/* HEADER */
+
+.book-pickup-header{
+
+    margin-bottom:24px;
+
+}
+
+.book-pickup-logo{
+
+    width:52px;
+    height:52px;
+
+    font-size:2rem !important;
+
+    margin-bottom:8px;
+
+}
+
+.book-pickup-title{
+
+    font-size:1.6rem !important;
+
+}
+
+.book-pickup-subtitle{
+
+    font-size:.88rem;
+
+    line-height:1.5;
+
+}
+
+/* FORM */
+
+.book-pickup-form{
+
+    gap:14px;
+
+}
+
+.book-pickup-form .MuiOutlinedInput-root{
+
+    border-radius:10px;
+
+}
+
+.book-pickup-form .MuiOutlinedInput-input{
+
+    padding-top:12px;
+
+    padding-bottom:12px;
+
+}
+
+.book-pickup-form .MuiSelect-select{
+
+    padding-top:12px;
+
+    padding-bottom:12px;
+
+}
+
+/* FARE */
+
+.book-pickup-fare-box{
+
+    padding:11px 16px;
+
+}
+
+.book-pickup-fare-label{
+
+    font-size:.9rem;
+
+}
+
+.book-pickup-fare-value{
+
+    font-size:1rem;
+
+}
+
+/* BUTTON */
+
+.book-pickup-btn{
+
+    padding:12px 0 !important;
+
+    font-size:.92rem !important;
+
+}
+
+}
+/*==========================================
+576px
+==========================================*/
+
+@media (max-width:576px){
+
+/* PAGE */
+
+.book-pickup-page{
+
+    padding:78px 14px 24px;
+
+}
+
+/* CARD */
+
+.book-pickup-card{
+
+    width:100%;
+
+    max-width:100%;
+
+    padding:24px 20px 32px !important;
+
+    border-radius:22px !important;
+
+}
+
+/* HEADER */
+
+.book-pickup-header{
+
+    margin-bottom:22px;
+
+}
+
+.book-pickup-logo{
+
+    width:48px;
+    height:48px;
+
+    font-size:1.8rem !important;
+
+    margin-bottom:8px;
+
+}
+
+.book-pickup-title{
+
+    font-size:1.45rem !important;
+
+}
+
+.book-pickup-subtitle{
+
+    font-size:.84rem;
+
+    line-height:1.5;
+
+    padding:0 6px;
+
+}
+
+/* FORM */
+
+.book-pickup-form{
+
+    gap:12px;
+
+}
+
+.book-pickup-form .MuiOutlinedInput-root{
+
+    border-radius:10px;
+
+}
+
+.book-pickup-form .MuiOutlinedInput-input{
+
+    padding-top:11px;
+
+    padding-bottom:11px;
+
+    font-size:.92rem;
+
+}
+
+.book-pickup-form .MuiSelect-select{
+
+    padding-top:11px;
+
+    padding-bottom:11px;
+
+    font-size:.92rem;
+
+}
+
+.book-pickup-form .MuiInputLabel-root{
+
+    font-size:.88rem;
+
+}
+
+/* FARE */
+
+.book-pickup-fare-box{
+
+    padding:10px 14px;
+
+}
+
+.book-pickup-fare-label{
+
+    font-size:.86rem;
+
+}
+
+.book-pickup-fare-value{
+
+    font-size:.96rem;
+
+}
+
+/* BUTTON */
+
+.book-pickup-btn{
+
+    padding:12px 0 !important;
+
+    font-size:.9rem !important;
+
+    border-radius:12px !important;
+
+}
+
+/* SUCCESS CARD */
+
+.booking-success-card{
+
+    width:100%;
+
+    max-width:340px;
+
+    padding:28px !important;
+
+}
+
+.booking-success-title{
+
+    font-size:1.7rem !important;
+
+}
+
+.booking-success-text{
+
+    font-size:.92rem;
+
+}
+
+.booking-history-btn{
+
+    width:100%;
+
+}
+
+}
